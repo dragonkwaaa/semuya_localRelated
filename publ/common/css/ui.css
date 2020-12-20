@@ -1,0 +1,660 @@
+.relative {
+	position : relative;
+}
+.absoluteR {
+	position : absolute;
+	top : 0;
+	right : 0;
+}
+.hide {
+	display : none;
+}
+.absoluteT {
+	position : absolute;
+	top : 0;
+	left : 0;
+}
+.absoluteL {
+	position : absolute;
+	top : 0;
+	left : 0;
+}
+.absoluteMR {
+	position : absolute;
+	top : 50%;
+	right : 0;
+	transform : translateY(-50%);
+	-webkit-transform : translateY(-50%);
+}
+input::placeholder {
+	color : #888888;
+}
+
+/* :: open : IE 브라우저에서 인풋창의 X버튼이 표시되는 것을 방지하는 파트. 20200928_1432. */
+input::-ms-clear {
+    display : none;
+}​
+/* :: close : IE 브라우저에서 인풋창의 X버튼이 표시되는 것을 방지하는 파트. 20200928_1432. */
+textarea::placeholder {
+	color : #888888;
+}
+.tarea {
+    width: calc(100% - 32px);
+    resize : none;
+    padding : 0 16px;
+}
+.tarea.botLiner {
+    outline : none;
+    line-height: 48px;
+    background-image: linear-gradient(transparent, transparent 47px, #efefef 1px);
+    background-size: 100% 48px;
+}
+
+
+
+.verticalM {
+	vertical-align : middle;
+}
+
+.section {
+	width : 100%;
+	display : block;
+}
+label input[type=checkbox], 
+label input[type=radio] {
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	background : url("/publ/common/img/checkIcon.png") no-repeat center / cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+	/* vertical-align: middle; */
+	vertical-align: top;
+}
+
+label input[type=radio] {
+	/* background : #fff; */
+	/* padding : 2px; */
+	/* border : 1px solid #b3b3b3;
+    border-radius : 50% !important; */
+    width : 20px;
+    height : 20px;
+    background : url('/publ/common/img/radioOff.png') no-repeat center / cover;
+}
+label input[type=radio]:checked {
+    /* border : 3px solid #ffc20e; */
+    width : 20px;
+    height : 20px;
+    background : url('/publ/common/img/radioOn.png') no-repeat center / cover;
+}
+
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input, input[type=text], 
+input[type=password], 
+.tbox {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    -webkit-border-radius: 0 !important;
+    box-shadow: none !important;
+    /* -webkit-border-radius: 0 !important; */
+    /* -moz-border-radius: 0 !important; */
+    /* border-radius: 0 !important; */
+}
+.tbox:focus {
+    outline : none;
+}
+label input[type=checkbox]:checked {
+	background : url("/publ/common/img/checkIcon_activated.png") no-repeat center / cover;
+}
+
+/* :: open : 라디오박스/체크박스 옆 텍스트의 길이가 길어졌을 때, 아이콘 바로 밑에 글자가 표시되는 문제를 해결한 파트. 20201003_1745. */
+/* input[type=checkbox] + span, 
+input[type=radio] + span {
+    padding-left: 8px;
+	font-size: 16px;
+	line-height : 20px;
+    color: #010101;
+    display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;    (주석)
+	vertical-align: top;
+} */
+input[type=checkbox] + span, 
+input[type=radio] + span {
+    padding-left: 8px;
+	font-size: 16px;
+	line-height : 20px;
+    color: #010101;
+    display: inline-block;
+	cursor: pointer;
+    vertical-align: top;
+    max-width : calc(100% - 30px);
+}
+/* :: close : 라디오박스/체크박스 옆 텍스트의 길이가 길어졌을 때, 아이콘 바로 밑에 글자가 표시되는 문제를 해결한 파트. 20201003_1745. */
+
+input:read-only {
+	background-color : #e3e3e3;
+} 
+input[readonly] {
+    /* background-color : #e3e3e3; */
+    background-color : #fff;
+    border-bottom : 1px solid #000;
+} 
+.tAlignL {
+	text-align : left;
+}
+.tAlignR {
+	text-align : right;
+}
+.tAlignC {
+	text-align : center;
+}
+.vAlignT {
+	vertical-align : top;
+}
+.vAlignM {
+	vertical-align : middle;
+}
+.floatR {
+	float : right;
+}
+.f_underlined {
+	text-decoration : underline;
+}
+
+.sbox {
+	display : inline-block;
+	position : relative;
+}
+.sbox a {
+	padding : 18px 30px;
+	border : 1px solid #b3b3b3;
+	width : 151px;
+	display : block;
+	font-size : 16px;
+	text-align : left;
+}
+
+.sbox:before {
+	content : "";
+	width : 11px;
+	height : 6px;
+	position : absolute;
+	top : 25px;
+	right : 24px;
+	background : url("/publ/common/img/iconDrop.png") no-repeat center / cover;
+}
+
+.sbox ul {
+	position : absolute;
+	top : 54px;
+	border : 1px solid #b3b3b3;
+	border-top : none;
+	background-color : #fff;
+	width : calc(100% - 2px);
+	height : auto;
+	max-height : 208px;
+	overflow : auto;
+	z-index : 10;
+	display : none;
+}
+.sbox ul li {
+	padding : 18px 30px;
+	font-size : 16px;
+	width : auto;
+	text-align : left;
+}
+.sbox ul li:hover {
+	/* background-color : #ffc20e; */
+	cursor : pointer;
+}
+.sbox ul li.disabled {
+	background-color : #e3e3e3;
+}
+.sbox ul li.disabled:hover {
+	background-color : #e3e3e3;
+}
+
+select {
+    height: 48px;
+    padding: 0 25px 0 10px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    background: url(/publ/common/img/arrow_down.png) no-repeat right 10px top 50% / 9px 5px;
+    border: 1px solid #d7dae2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+    font-family : "MGothic", sans-serif;
+}
+select:focus {
+    outline : none;
+}
+/* :: open : IE 브라우저에서 드롭박스 <select> 태그에 전용 화살표 마크 생기는 것을 방지하는 파트. 20200928_1434.  */
+select::-ms-expand {
+    display: none;
+}
+/* :: close : IE 브라우저에서 드롭박스 <select> 태그에 전용 화살표 마크 생기는 것을 방지하는 파트. 20200928_1434.  */
+
+input:focus {
+    outline : 1px solid #ccc;
+}
+
+
+.popup {
+	display : none;
+    position : fixed;
+    /* position : absolute; */
+	top : 50%;
+	left : 50%;
+	transform : translate(-50%, -50%);
+	-webkit-transform : translate(-50%, -50%);
+	background-color : #fff;
+	z-index : 101;
+}
+.closePopBtn {
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(/publ/common/img/iconClose.png) no-repeat center / cover;
+}
+
+
+.tip {
+	font-size : 10px;
+	color : #fb376a;
+}
+
+.logoMain {
+    width: 115px;
+    height: 40px;
+    display: inline-block;
+    vertical-align : middle;
+    background: url(/publ/common/img/logoMain.png) no-repeat center / cover;
+}
+.logoFooter {
+    width: 115px;
+    height: 40px;
+    display: inline-block;
+    background: url(/publ/common/img/logoMain.png) no-repeat center / cover;
+}
+.iconBtn.kakaoSort {
+    width: 27px;
+    height: 25px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_socialKakao.png) no-repeat center / cover;
+}
+.iconBtn.blogSort {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_socialBlog.png) no-repeat center / cover;
+}
+.iconBtn.myBagSort {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_myBag.png) no-repeat center / cover;
+}
+.iconBtn.searchSort {
+    position : absolute;
+    top : 0;
+    right : 0;
+    width: 56px;
+    height: 48px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_search.png) no-repeat center / 20px 20px;
+}
+.calendarIcon {
+    position : absolute;
+    top : 0;
+    right : 20px;
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_calendar.png) no-repeat center / 20px 20px;
+}
+.rStarIcon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_star_off.png) no-repeat center / cover;
+} 
+.rStarIcon.activated {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(/publ/common/img/icon_star_on.png) no-repeat center / cover;
+} 
+.brokPhIcon {
+    width: 104px;
+    height: 116px;
+    display: inline-block;
+    background: url(/publ/common/img/brokenPhone_1.png) no-repeat center / cover;
+}
+
+.arrowRIcon {
+    width: 6px;
+    height: 12px;
+    display: inline-block;
+    background: url(/publ/common/img/arrowRight_1.png) no-repeat center / cover;
+}
+.naverLogIcon {
+    width: 83px;
+    height: 40px;
+    display: inline-block;
+    background: url(/publ/common/img/naverLogIcon.png) no-repeat center / cover;
+}
+.kakaoLogIcon {
+    width: 82px;
+    height: 40px;
+    display: inline-block;
+    background: url(/publ/common/img/kakaoLogIcon.png) no-repeat center / cover;
+}
+.faceBLogIcon {
+    width: 83px;
+    height: 40px;
+    display: inline-block;
+    background: url(/publ/common/img/faceBLogIcon.png) no-repeat center / cover;
+}
+.viewMoreIcon {
+    width: 122px;
+    height: 24px;
+    display: inline-block;
+    background: url(/publ/common/img/viewMoreIcon.png) no-repeat center / cover;
+}
+.heartIcon {
+    width: 22px;
+    height: 20px;
+    display: inline-block;
+    background: url(/publ/common/img/heartIconEmpty.png) no-repeat center / cover;
+}
+.heartIcon.activated {
+    height : 19px;
+    background: url(/publ/common/img/heartIconFull.png) no-repeat center / cover;
+}
+.closeIcon {
+    width : 16px;
+    height : 16px;
+    background: url(/publ/common/img/iconClose.png) no-repeat center / cover;
+}
+.decreaseIcon {
+    width : 32px;
+    height : 32px;
+    background: url(/publ/common/img/decreaseIcon.png) no-repeat center / cover;
+}
+.increaseIcon {
+    width : 32px;
+    height : 32px;
+    background: url(/publ/common/img/increaseIcon.png) no-repeat center / cover;
+}
+.togControlIcon {
+    width : 50px;
+    height : 20px;
+    background: url(/publ/common/img/togControlIcon.png) no-repeat center / cover;
+}
+.togControlIcon.activated {
+    background: url(/publ/common/img/togControlIcon_active.png) no-repeat center / cover;
+}
+.rateStarIcon {
+    width : 18px;
+    height : 17px;
+    background: url(/publ/common/img/rateStarIcon.png) no-repeat center / cover;
+}
+.rateStarIcon.activated {
+    width : 18px;
+    height : 17px;
+    background: url(/publ/common/img/rateStarIconOn.png) no-repeat center / cover;
+}
+
+.lockIcon {
+    width : 16px;
+    height : 20px;
+    background: url(/publ/common/img/lockIcon.png) no-repeat center / cover;
+}
+.buyStackRndIcon {
+    background: url(/publ/common/img/buyStackRndIcon.png) no-repeat center / cover;
+}
+.favStackRndIcon {
+    background: url(/publ/common/img/favStackRndIcon.png) no-repeat center / cover;
+}
+.pntStackRndIcon {
+    background: url(/publ/common/img/pntStackRndIcon.png) no-repeat center / cover;
+}
+.deliStackRndIcon {
+    background: url(/publ/common/img/deliStackRndIcon.png) no-repeat center / cover;
+}
+.TrashIcon {
+    width : 16px;
+    height : 20px;
+    background: url(/publ/common/img/trashIcon.png) no-repeat center / cover;
+}
+
+.mobHamIcon {
+    width : 20px;
+    height : 18px;
+    background: url(/publ/common/img/mobHamIcon.png) no-repeat center / cover;
+}
+.logoMobIcon {
+    width : 50px;
+    height : 25px;
+    background: url(/publ/common/img/logoMobIcon.png) no-repeat center / cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+.f_blue {
+    color : #1d39b2;
+}
+.f_red {
+    color : #ff5850;
+}
+.togSwitch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 30px;
+}
+.togSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.togSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.togSlider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .togSlider {
+  background-color: #1d39b2;
+}
+input:focus + .togSlider {
+  box-shadow: 0 0 1px #1d39b2;
+}
+input:checked + .togSlider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+.togSlider.roundSort {
+  border-radius: 30px;
+}
+.togSlider.roundSort:before {
+  border-radius: 50%;
+}
+img {
+    width : 100%;
+}
+
+
+/* :: open : ksg_20201005_0037 : 폰사요몰_중고장터 물품등록 페이지 추가 파트. */
+.tarea.roundBorder {
+    margin-top : 10px;
+    margin-bottom : 25px;
+    outline: none;
+    line-height: 32px;
+    /* background-image: linear-gradient(transparent, transparent 47px, #efefef 1px);
+    background-size: 100% 48px; */
+    border : solid #ccc;
+    border-width : 1px 0 1px 0;
+    font-size : 16px;
+}
+/* :: close : ksg_20201005_0037 : 폰사요몰_중고장터 물품등록 페이지 추가 파트. */
+
+
+
+/* ------------------------------------- ss2인베스트먼트 시작 ---------------------------------------------- */
+
+
+
+/* :: open : ksg_20201204_1945 : [SS2인베스트먼트] 메인 페이지 내용. */
+/* :: open : 기존 내용 변환 파트. */
+.logoMain {
+    width: 226px;
+    height: 38px;
+    display: inline-block;
+    vertical-align : middle;
+    background: url(/common/img/logoMain.png) no-repeat center / cover;
+}
+.logoFooter {
+    width: 228PX;
+    height: 38px;
+    display: inline-block;
+    background: url(/common/img/logoFooter.png) no-repeat center / cover;
+}
+.iconBtn.faceSort {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url(/common/img/icon_socialface.png) no-repeat center / cover;
+}
+.iconBtn.instaSort {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url(/common/img/icon_socialInsta.png) no-repeat center / cover;
+}
+.iconBtn.youtubeSort {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url(/common/img/icon_socialYoutube.png) no-repeat center / cover;
+}
+.whitening .logoMain {
+    background: url(/common/img/logoMainColor.png) no-repeat center / cover;
+}
+.f_darkBlue {
+    color : #2d3a65;
+}
+.mobHamIcon {
+    width : 20px;
+    height : 19px;
+    background: url(/common/img/mobHamIcon.png) no-repeat center / cover;
+}
+.logoMobIcon {
+    width : 112px;
+    height : 19px;
+    background: url(/common/img/logoMobIcon.png) no-repeat center / cover;
+}
+/* :: close : 기존 내용 변환 파트. */
+/* :: close : ksg_20201204_1945 : [SS2인베스트먼트] 메인 페이지 내용. */
+
+
+/* :: open : ksg_20201205_1738 : [SS2인베스트먼트] 회사소개 - CI/BI 페이지 내용. */
+.f_normWeighted {
+    font-weight : 400;
+}
+/* :: close : ksg_20201205_1738 : [SS2인베스트먼트] 회사소개 - CI/BI 페이지 내용. */
+
+/* :: open : ksg_20201205_2041 : [SS2인베스트먼트] 회사소개 - 개인투자조합이란 페이지 내용.  */
+.f_bold {
+    font-weight : 800;
+}
+/* :: close : ksg_20201205_2041 : [SS2인베스트먼트] 회사소개 - 개인투자조합이란 페이지 내용.  */
+
+
+
+
+
+
+/* ---------------------------------------------[ 세무야 시작 ]---------------------------------------------------------- */
+
+
+
+
+
+/* :: open : ksg_20201219_2054 : [세무야] 메인 페이지 파트. */
+/* :: innerO : 신규 내용 파트. */
+.bg_tmt {
+    background-color : #b5413c;
+}
+.bg_litGrey {
+    background-color : #f1f1f1;
+}
+.f_tmt {
+    color : #b5413c;
+}
+.f_norm {
+    font-weight : 400;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20201219_2054 : [세무야] 메인 페이지 파트. */
+
+/* :: open : ksg_20201220_1226 : [세무야] 회사소개 페이지 파트. */
+/* :: innerO : 신규 내용 파트. */
+.bookIcon {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    background: url("/publ/common/img/bookIcon_1.png") no-repeat center / cover;
+}
+.scaleIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/publ/common/img/scaleIcon_1.png") no-repeat center / cover;
+}
+.magnifIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/publ/common/img/magnifIcon_1.png") no-repeat center / cover;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20201220_1226 : [세무야] 회사소개 페이지 파트. */

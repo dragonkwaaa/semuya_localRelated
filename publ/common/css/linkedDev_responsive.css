@@ -1,0 +1,2052 @@
+@media screen and (max-width:800px) {
+
+    /* :: open : 폰사요몰M_회원가입#2 페이지 파트. */
+	.container {
+		max-width: 800px;
+		min-width : auto;
+		width : 100%;
+		height : auto;
+		min-height: 100%;
+		margin: 0 auto;
+		position: relative;
+		padding: 0;
+	}
+
+	.contents {
+		position : relative;
+		width  : 100%;
+        font-size : 0;
+        padding : 0;
+        min-height : auto;
+	}
+
+    header {
+        display : none;
+    }
+    .pageTop {
+
+        height : auto;
+        line-height : 1;
+        width: calc(100% - 40px);
+        padding : 16px 20px;
+    }
+    .pageTop .topMainGroup {
+        display : none;
+    }
+
+    .pageTop .logoBox {
+        width : 100%;
+        /* max-width : 200px; */
+        text-align : center;
+    }
+    .pageTop .logoBox .logoMobIcon {
+        display : inline-block;
+    }
+    .logoBox .logoMain {
+        display : none;
+    }  
+    .logoBox .logoMob {
+        display : inline-block;
+    }
+
+    .iconBtn.kakaoSort {
+        width : 22px;
+        height : 20px;
+    }
+    .iconBtn.blogSort {
+        width : 27px;
+        height : 27px;
+    }
+    .btnGroup.rSideSort .iconBtn {
+        margin-left: 11px;
+    }
+    .pageTop .btnGroup.rSideSort {
+        right : 20px;
+    }
+
+    /* .btnGroup.topMainSort {
+        display : none;
+    } */
+    .hamIconGroup.mobOnly {
+        display : inline-block;
+        position : absolute;
+        top : 16px;
+        left : 20px;
+    }
+    .topSearchGroup {
+        margin : 20px auto 0 auto;
+        width : calc(100% - 40px);
+    }
+    .topSearchGroup .txtLiner {
+        font-size : 12px;
+    }
+
+    .topSearchGroup .sboxGroup {
+        padding : 12px 0 10px 0;;
+        margin : 0;
+        display : block;
+    }
+    .topSearchGroup .sboxGroup .sbox {
+        height : 45px;
+        width : calc(50% - 5px);
+    }
+    .topSearchGroup .bgBtn.nomSort {
+        position: static;
+        right: 0;
+        top: 0;
+        transform: none;
+        -webkit-transform: none;
+    }
+    .topSearchGroup .txtLiner.priceSort {
+        margin-left: 11px;
+        width : calc(100% - 202px);
+    }
+
+    .bgBtn.nomSort {
+        width: 120px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 15px;
+    }
+    .lfFloat {
+        display : none;
+    }
+
+    .titleBox.sectSort {
+        font-size : 20px;
+        position : relative;
+    }
+    .joinStepLiner {
+        display : inline-block;
+        position : absolute;
+        top : 0;
+        right : 0;
+        line-height : 20px;
+        height : 20px;
+    }
+    .joinStepLiner .flatLiner {
+        display : inline-block;
+        width : 19px;
+        border : solid #ccc;
+        border-width : 1px 0 0 0;
+        margin-left : 5px;
+    }
+    .joinStepLiner .flatLiner.fstChd {
+        margin-left : 0;
+    }
+    .joinStepLiner .flatLiner.activated {
+        border : solid #000;
+        border-width : 2px 0 0 0;
+    }
+    .tbox {
+        height : 35px;
+        font-size : 14px;
+    }
+    .regGroup.joinSort .tBoxGroup {
+        margin-top : 20px;
+    }
+    .tBoxGroup.btnMixSort .bgBtn {
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        right : 40px;
+        bottom : 5px;
+    }
+    .tBoxGroup.btnMixSort .bgBtn.doubTSort {
+        top : 6px;
+    }
+    .tipBox.tCount {
+        padding: 10px 0 0 0;
+        right: 110px;
+    }
+    .tBoxGroup.btnMixSort .tbox {
+        width: calc(100% - 160px);
+        padding-right: 144px;
+    }
+    .regGroup.joinSort {
+        margin-bottom: 30px;
+    }
+    .btnGroup.regBotSort .bgBtn {
+        display : block;
+        width : 100%;
+        height : 45px;
+        line-height : 45px;
+        font-size : 17px;
+    }
+    .btnGroup.regBotSort {
+        display : block;
+    }
+    .mainCon.userRegSort {
+        margin-bottom : 130px;
+        padding-bottom : 0;
+    }
+    .pageBot .ntList li {
+        padding : 0 20px;
+        width: calc(100% - 40px);
+    }
+    .pageBot .ntList .infoBox {
+        width: calc(100% - 100px);
+        /* font-size: 12px; */
+    }
+    .pageBot .ntList .titleBox {
+        font-size : 12px;
+        width : 60px;
+    }
+    .ntList .moreBtn {
+        font-size : 12px;
+    }
+    .logoFooter {
+        display : none;
+    }
+    .footerCon {
+        padding : 20px;
+        width : calc(100% - 40px);
+    }
+    .mobLogoFooter {
+        width: 42px;
+        height: 22px;
+        display: inline-block;
+        background: url(/img/mobLogoFooter.png) no-repeat center / cover;
+        vertical-align : top;
+    }
+    .btnGroup.ftSort {
+        display : block;
+        padding-top : 20px;
+        text-align : left;
+        width : 100%;
+    }
+    .btnGroup.ftSort .tOnlyBtn.webOnlySort {
+        display : none;
+    }
+    .btnGroup.ftSort .tOnlyBtn.mobFstChd {
+        border-left : none;
+        padding-left : 0;
+    }
+    .footerCon .upperGroup {
+        padding-bottom : 25px;
+    }
+    .footerCon .lowerGroup .leftGroup, 
+    .footerCon .lowerGroup .rightGroup {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+    .footerCon .lowerGroup .rightGroup {
+        padding-top : 25px;
+    }
+    .footerCon .lowerGroup .rightGroup .titleBox {
+        text-align : center;
+    }
+    .footerCon .lowerGroup .titleBox {
+        font-size : 15px;
+    }
+    .footerCon .lowerGroup .rightGroup .titleBox {
+        padding-top : 5px;
+    }
+    /* :: close : 폰사요몰M_회원가입#2 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_아이디찾기 페이지 파트. */
+    .titleBox.findUserInfoSort {
+        display : none;
+        font-size : 20px;
+    }
+    .tabBtnGroup.findUserInfo {
+        font-size : 14px;
+    }
+    .tabBtnGroup.findUserInfo .tOnlyBtn {
+        padding: 15px 20px;
+        margin-left: 35px;
+    }
+    .regGroup.findUserInfoSort {
+        padding : 0 20px;
+    }
+    .btnGroup.findBotSort {
+        padding : 0 20px;
+    }
+    /* :: close : 폰사요몰M_아이디찾기 페이지 파트. */
+
+
+    /* :: open : 폰사요몰_아이디찾기완료 모바일 페이지 파트. */
+    .foundUserInfoGroup .titleBox {
+        font-size : 14px;
+        padding-bottom: 15px;
+    }
+    .foundUserInfoGroup .infoGroup {
+        font-size : 14px;
+    }
+    .foundUserInfoGroup {
+        padding: 0 0 70px 0;
+    }
+    .titleBox.mobLSort {
+        display : block;
+        text-align : left;
+        padding : 0 20px;
+        margin-bottom : 0;
+    }
+    /* :: close : 폰사요몰_아이디찾기완료 모바일 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_비밀번호 찾기 모바일 페이지 팥. */
+    .regGroup.findUserInfoSort .tBoxGroup.btnMixSort .bgBtn {
+        right: 20px;
+    }
+    /* :: close : 폰사요몰M_비밀번호 찾기 모바일 페이지 팥. */
+
+
+    /* :: open : 폰사요몰M_비밀번호재설정 페이지 파트. */
+    .titleBox.mobCSort {
+        display : block;
+        text-align : center;
+        margin-bottom : 40px;
+    }
+    /* :: close : 폰사요몰M_비밀번호재설정 페이지 파트. */
+
+    /* :: open : 폰사요몰M_회원가입#1 페이지 파트. */
+    .titleBox.agreeTop {
+        font-size : 14px;
+    }
+    .titleBox.sectSort.mobClosedLSort {
+        margin-bottom: 0;
+    }
+    .chkGroup.joinTotalSort {
+        text-align : left;
+    }
+    .chkGroup.joinSubSort .titleBox {
+        font-size : 16px;
+    }
+    input[type=checkbox] + span, input[type=radio] + span {
+        font-size: 15px;
+    }
+    .chkGroup.joinSubSort .chkBlock {
+        padding-top : 25px;
+    }
+    .chkGroup.joinSubSort {
+        padding: 25px 0 25px 0;
+    }
+    .btnGroup.regBotSort .bgBtn.mobHfSort {
+        width: calc(50% - 3px);
+        display : inline-block;
+    }
+    .btnGroup.regBotSort .bdBtn.mobHfSort {
+        width: calc(50% - 3px);
+    }
+    .btnGroup.regBotSort .bdBtn {
+        line-height : 43px;
+        height : 43px;
+    }
+    .btnGroup.regBotSort .bgBtn.mobHfSort + .bdBtn.mobHfSort {
+        margin-left : 4px;
+    }
+    .btnGroup.regBotSort .bdBtn.mobHfSort {
+        width: calc(50% - 3px);
+    }
+    /* :: close : 폰사요몰M_회원가입#1 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_내폰팔기메인 페이지 파트. */
+    .pgTopTitGroup .mainTitle {
+        display : none;
+    }
+    .pgTopTitGroup .mainTitle.mobCSort {
+        display : block;
+        font-size : 20px;
+    }
+    .pgTopTitGroup {
+        padding : 70px 0 27px 0;
+    }
+    .slideBanGroup {
+        margin-right : 0;
+    }
+    .slideBanGroup.buyMyPLSort {
+        display : block;
+        width : calc(100% - 40px);
+        padding : 0 20px 100px 20px;
+    }
+    .purcStatusTopGroup .topTitle {
+        font-size : 15px;
+        font-weight : 800;
+    }
+    .purcStatusTopGroup .topMoreBox {
+        font-size: 13px;
+        width: calc(100% - 140px);
+        font-weight : 800;
+    }
+    .currGroup {
+        max-width : 100%;
+    }
+    .purcStatus li .inPurcStat {
+        font-size : 12px;
+        padding: 15px 0;
+    }
+    .currGroup {
+        padding : 0 20px;
+        width : calc(100% - 40px);
+    }
+    .purcStatus li {
+        padding : 0 20px;
+    }
+    .purcStatus {
+        height : auto;
+    }
+    .imgFaqGroup.webOnlySort {
+        display : none;
+    }
+    .stackBtnFaqGroup.mobOnlySort {
+        display : block;
+        padding : 30px 20px 70px 20px;
+        width : calc(100% - 40px);
+    }
+    .stackBtnFaqGroup.mobOnlySort .bgBtn {
+        display : block;
+        padding : 20px;
+        margin-top : 5px;
+        position : relative;
+        font-size : 12px;
+        text-align : left;
+        background-color : #56d6d2;
+    }
+    .stackBtnFaqGroup.mobOnlySort .bgBtn.fstChd {
+        margin-top : 0;
+    }
+    .stackBtnFaqGroup.mobOnlySort .bgBtn:before {
+        content : "";
+        position : absolute;
+        right : 20px;
+        top : 20px;
+        width : 6px;
+        height : 12px;
+        background : url("/img/iconRight_wh.png") no-repeat center / cover;
+    }
+    .listTopGroup .tabBtnGroup {
+        width : 100%;
+        overflow: auto;
+        white-space: nowrap;
+        -ms-overflow-style: auto;
+    }
+    .listTopGroup .tabBtnGroup.tabFilSort {
+        padding-bottom : 30px;
+    }
+
+
+    .listTopGroup .tabBtnGroup .tOnlyBtn:first-child {
+        margin-left : 20px;
+    }
+    .listTopGroup .tabBtnGroup .tOnlyBtn {
+        margin-left : 20px;
+    }
+    .listTopGroup.tabFilSort {
+        line-height : 1;
+        height : auto;
+    }
+
+    .bgBtn.filterSort {
+        display : block;
+        margin : 0 auto;
+        line-height : 44px;
+        height : 44px;
+    }
+    .goodsList li {
+        margin-left: 10px;
+        width: calc(50% - 7.5px);
+    }
+    .goodsList {
+        width : calc(100% - 40px);
+        padding : 0 20px;
+    }
+    li .infoGroup .prcBox {
+        font-size : 17px;
+        font-weight : 800;
+        margin-top : 5px;
+        line-height : 1.2;
+    }
+    .goodsList li:nth-child(2n-1) {
+        margin-left : 0;
+    }
+    .goodsList li:nth-child(10n) {
+        margin-left: 10px;
+    }
+    .goodsList li:nth-child(n+3) {
+        margin-top : 20px;
+    }
+    .mainCon.listSort {
+        padding-bottom: 100px;
+    }
+    /* :: close : 폰사요몰M_내폰팔기메인 페이지 파트. */
+    
+
+
+    /* :: open : 폰사요몰M_내폰팔기 상세 페이지 파트. */
+    .bannerGroup .bannerBtn.webOnlySort {
+        display : none;
+    }
+    .bannerGroup.myPhSort {
+        padding: 30px 20px 50px 20px;
+    }
+    .bannerGroup.gdSaleRegGroup {
+        margin: 0 auto;
+        width : calc(100% - 40px);
+        padding-bottom : 100px;
+    }
+    .saleGdImgBox {
+        width : 100%;
+    }
+    .pgRouteBox {
+        padding-bottom: 15px;
+    }
+    .saleGdRadioGroup {
+        display : block;
+        width : 100%;
+        padding : 30px 0 0 0;
+    }
+    .vStackGroup .titleBox {
+        padding-bottom : 20px;
+    }
+    .radioSiblingCase.webOnlySort {
+        display : none;
+    }
+    .vStackGroup.blLabelSort.webOnlySort {
+        display : none;
+    }
+    .vStackGroup.mobClosedSort {
+        padding-bottom: 0;
+    }
+    .btnGroup.vStkBotSort {
+        display : none;
+    }
+    .container.mobFootTogSort {
+        margin-bottom : 50px;
+    }
+    .mobBotFixedGroup {
+        display : block;
+        position : fixed;
+        bottom : 0;
+        width : 100%;
+        font-size : 0;
+    }
+    .bgBtn.mobBotTogSort {
+        display : block;
+        width : 100%;
+        height : 52px;
+        line-height : 52px;
+    }
+    .bgBtn.mobBotTogSort.hide {
+        display : none;
+    }
+    .toggleGroup.gdOpSelTog {
+        bottom: 52px;
+        width: 100%;
+    }
+    .toggleGroup.gdOpSelTog.hide {
+        display : none;
+    }
+    .bannerGroup .bannerBtn.mobOnlySort {
+        display : block;
+    }
+    .togInsideGroup .vStackGroup {
+        border-bottom : none;
+    }
+    .togInsideGroup .vStackGroup.opStackConSort {
+        background-color : #f2f2f5;
+    }
+    .vStackGroup.opStackConSort .opTitle {
+        display : block;
+        width: calc(100% - 20px);
+    }
+    .singleOptionBox .optionBotGroup .opPriceTxt {
+        float : right;
+        width : 100px;
+        vertical-align : middle;
+        line-height : 32px;
+    }
+    .singleOptionBox .optionBotGroup {
+        padding-top : 45px;
+    }
+    .singleOptionBox .optionBotGroup .quantityBox {
+        width : calc(100% - 100px);
+        vertical-align : middle;
+        font-size : 0;
+    }
+    .quantityBox .quantity {
+        width : 55px;
+        margin-top : -1px;
+        /* line-height : 30px; */
+        border : solid #d9d9d9;
+        border-width : 1px 0 1px 0;
+    }
+    /* :: close : 폰사요몰M_내폰팔기 상세 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_매각신청서작성 페이지 파트. */
+    .mainCon.mulListSort .titleBox.sectCSort {
+        margin-bottom: 25px;
+    }
+    .titleBox.sectCSort {
+        font-size : 20px;
+    }
+    .vertLineGoodInfo {
+        padding : 20px;
+        margin-bottom : 45px;
+    }
+    .vertLineGoodInfo .linerInfoBox {
+        font-size: 14px;
+        font-weight : 800;
+        width: calc(100% - 180px);
+    }
+    .vertLineGoodInfo .linerPriceBox {
+        display: block;
+        width : 100%;
+        font-size: 0;
+        text-align: left;
+        font-weight: 800;
+        padding-top : 20px;
+    }
+    .linerPriceBox .priceTitle {
+        display : inline-block;
+        width : 50%;
+        padding : 0;
+    }
+    .linerPriceBox .priceAmount {
+        display : inline-block;
+        width : 50%;
+        font-size: 20px;
+        vertical-align: middle;
+        text-align : right;
+    }
+    .titleBox.sectLSort {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    table.deliTypeInfo.webOnlySort {
+        display : none;
+    }
+    table.deliTypeInfo.mobOnlySort {
+        display : block;
+    }
+    table.deliTypeInfo {
+        border-width: 1px 0 1px 0;
+    }
+    table.deliTypeInfo th {
+        padding : 20px 0;
+        vertical-align : top;
+    }
+    table.deliTypeInfo td {
+        padding: 20px;
+        vertical-align : top;
+        line-height : 17px;
+    }
+    .deliTypeInfo .gapTxt {
+        padding-top : 15px;
+    }
+    .tBoxGroup.btnMixSort .bgBtn.mobRSort {
+        right : 20px;
+    }
+    .chkGroup.goodsRegSort .chkBlock {
+        padding-bottom : 20px;
+    }
+    .btnGroup.regBotPdSort {
+        width : 100%;
+    }
+    .btnGroup.regBotPdSort .bgBtn.mobHfSort {
+        width: calc(50% - 3px);
+        display : inline-block;
+        padding : 0;
+        height : 45px;
+        line-height : 45px;
+    }
+    .btnGroup.regBotPdSort .bdBtn.mobHfSort {
+        width: calc(50% - 3px);
+        padding : 0;
+        display : inline-block;
+    }
+    .btnGroup.regBotPdSort .bdBtn {
+        line-height : 43px;
+        height : 43px;
+    }
+    .btnGroup.regBotPdSort .bdBtn.mobHfSort + .bgBtn.mobHfSort {
+        margin-left : 3px;
+    }
+    .moveToPGtab.mobHideSort {
+        display : none;
+    }
+    .tabLinkedImgBox.mobHideSort {
+        display : none;
+    }
+    .bannerGroup.gdSaleRegGroup.pdAdjustMod {
+        padding-top : 30px;
+        padding-bottom : 0;
+    }
+    .saleGdOpSelGroup {
+        /* display: inline-block;
+        vertical-align: top;
+        width: calc(52% - 70px);
+        padding-left: 70px; */
+        width : 100%;
+        padding-left : 0;
+        padding-top : 30px;
+    }
+    .vStackGroup .gdInfoCase .titleBox {
+        width : 70px;
+    }
+    .vStackGroup .gdInfoCase .gdIfTxt {
+        width : calc(100% - 70px);
+        display : inline-block;
+        vertical-align : top;
+    }
+    .vStackGroup.webOnlySort {
+        display : none;
+    }
+    .btnGroup.vStkBotEqualSort.webOnlySort {
+        display : none;
+    }
+    .moveToPGtab .tOnlyBtn {
+        width : 30%;
+        min-width : 90px;
+    }
+    .moveToPGtab.gdSpecSort {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .vertLineGoodInfo.webOnlySort {
+        display : none;
+    }
+    .btnGroup.mobBuySort.hide {
+        display : none;
+    }
+    .btnGroup.mobBuySort {
+        display: block;
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+    }
+    .btnGroup.mobBuySort .bgBtn {
+        width : calc(50% - 1px);
+        vertical-align : middle;
+    }
+    .btnGroup.mobBuySort .bdBtn {
+        width : calc(50% - 1px);
+        height : calc(100% - 2px);
+        background-color : #fff;
+        vertical-align : middle;
+        color : #1d39b2;
+        border : 1px solid #1d39b2;
+    }
+    .reviewListGroup .centerRateGroup {
+        padding: 10px 0 40px 0;
+    }
+    .centerRateGroup .rateTxtGroup {
+        font-size: 18px;
+    }
+    
+    .liMConGroup .vertSepGroup.webOnlySort {
+        display : none;
+    }
+    .liMConGroup .vertSepGroup.mobOnlySort {
+        display : block;
+        padding-bottom : 20px;
+    }
+    .liMConGroup.gdSpecSort {
+        padding : 30px 20px 20px 20px;
+    }
+    .liMConGroup .infoGroup.vertSepSort.mobOnlySort {
+        width: calc(100% - 128px);
+        padding-left : 15px;
+        vertical-align: top;
+        display : inline-block;
+    }
+    .liMConGroup .infoGroup.mobOnlySort .bulkHead {
+        display : none;
+    }
+    .liMConGroup .infoGroup.mobOnlySort span {
+        display : block;
+        padding-bottom : 10px;
+    }
+    .vertSepDownGroup.mobOnlySort {
+        display : block;
+        margin-top : 20px;
+    }
+    .liMConGroup .vertSepDownGroup .infoGroup.vertSepSort {
+        padding : 20px 0 0 0;
+    }
+    .vertSepDownGroup .mainTxtBox {
+        max-width: 100%;
+        font-size : 14px;
+        line-height : 19px;
+    }
+    .liMConGroup .vertSepDownGroup .bdBtn {
+        position : static;
+        margin-top : 20px;
+        width : 100%;
+    }
+    .commentGroup.inListSort.revSpSort .commMainInfo .commDivision {
+        display : block;
+    }
+    .toggleListGroup {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    .toggleListGroup.gdSpecSort .commentGroup.inListSort {
+        padding : 0;
+        display : none;
+    }
+    .toggleListGroup.gdSpecSort .commentGroup.inListSort.revSpSort .commMainInfo {
+        padding : 20px 0;
+        margin-top : 20px;
+    }
+    .toggleListGroup.gdSpecSort .commentGroup.inListSort.revSpSort .commMainInfo pre {
+        display: block;
+        padding-left: 0;
+        width: 100%;
+        padding-top : 20px;
+    }
+    .toggleListGroup.gdSpecSort .commentGroup.inListSort.mobOnlySort {
+        display : block;
+    }
+    .toggleListGroup.gdSpecSort .commentGroup.inListSort.mobOnlySort.hide {
+        display : none;
+    }
+    .vertSepDownGroup .mainTxtBox.blockShow {
+        display : block;
+    }
+    /* :: close : 폰사요몰M_매각신청서작성 페이지 파트. */
+
+    /* :: open : 폰사요몰M_마이페이지(구매내역) 페이지 파트. */
+    .pgTopTitGroup.mobOnlySort {
+        display : block;
+    }
+    .bannerGroup .bannerBtn img.webOnlySort {
+        display : none;
+    }
+    .bannerGroup .bannerBtn img.mobOnlySort {
+        display : block;
+    }
+    .bannerGroup.pgTopSort.innerInfoMod {
+        margin : 0;
+        margin-bottom : 35px;
+    }
+    .bannerInTxtGroup.webOnlySort {
+        display : none;
+    }
+    .bannerInBtnGroup {
+        bottom : 15px;
+        right : 0;
+        width : calc(100% - 40px);
+        padding : 0 20px;
+        text-align : center;
+    }
+    .bannerInBtnGroup .combinedBtn {
+        margin-left : 0;
+        max-width : 90px;
+        width : 25%;
+    }
+    .bannerInBtnGroup .combinedBtn i {
+        width : 50px;
+        height : 50px;
+    }
+    .moveToPGtab.myPgSort {
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom : 25px;
+    }
+    .lFlEqSubTabGroup {
+        display : block;
+        padding-left : 20px;
+        /* padding-bottom : 50px; */
+        padding-bottom : 30px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .lFlEqSubTabGroup .tOnlyBtn {
+        font-size : 16px;
+        margin-right : 30px;
+    }
+    .lFlEqSubTabGroup .tOnlyBtn.activated {
+        font-weight : 800;
+    }
+    .rtSection.commSort {
+        width : 100%;
+        padding : 0;
+    }
+    .listTopGroup.schSort.periodSort {
+        padding: 20px;
+        margin-bottom : 15px;
+    }
+    .monthSelGroup {
+        text-align : center;
+    }
+    .monthSelGroup .bgBtn {
+        max-width : 128px;
+        width : 20%;
+        line-height: 32px;
+        font-size : 12px;
+    }
+    .calendarGroup .bgBtn.searchSort {
+        width : 100%;
+        margin : 20px 0 0 0;
+    }
+    .calendarGroup .datePickGroup {
+        width : calc(50% - 27px);
+    }
+    .calendarGroup .datePickGroup .tbox.dateBox {
+        width : calc(100% - 75px);
+        padding : 0 60px 0 15px;
+    }
+    .toggleListGroup.noticeSort li.recordSort {
+        border-top: 1px solid #000;
+    }
+    .toggleListGroup.noticeSort .liMConGroup {
+        padding: 20px;
+    }
+    .titleLayer .leftTitle {
+        /* width: 105px; */
+        width: 90px;
+        vertical-align: top;
+        font-size : 12px;
+    }
+    .titleLayer .rightMainTitle {
+        /* width: calc(100% - 105px); */
+        width: calc(100% - 90px);
+        line-height : 1.2;
+        font-size : 12px;
+    }
+    /* :: close : 폰사요몰M_마이페이지(구매내역) 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_마이페이지(적립금관리) 페이지 파트. */
+    .liTTotGroup .titleBox {
+        font-size : 20px;
+    }
+    .liTTotGroup .titleBox.priceTxt {
+        font-size : 20px;
+    }
+    .liTTotGroup {
+        padding : 0 20px 23px 20px;
+    }
+    /* :: close : 폰사요몰M_마이페이지(적립금관리) 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_마이페이지(1:1문의) 페이지 파트. */
+    .liTRegBGroup {
+        padding-top : 0;   
+        padding-bottom : 20px;
+    }
+    .liTRegBGroup .titleBox.webOnlySort {
+        display : none;
+    }
+    .liTRegBGroup .rSideBtnGroup {
+        text-align: right;
+        width: 100%;
+    }
+    .liTRegBGroup .rSideBtnGroup .bgBtn {
+        margin-right : 20px;
+    }
+    .liTogGroup.inquirySort {
+        padding : 20px;
+    }
+    .liTogGroup .bdBtn {
+        position : static;
+        margin : 15px 0 0 auto;
+        display : block;
+    }
+    .commentGroup.inListSort.revSpSort .commMainInfo .commDivision.myInqSort {
+        margin-left : 20px;
+        margin-bottom : 15px;
+    }
+    .toggleListGroup.noticeSort .commentGroup.inListSort.revSpSort .commMainInfo pre {
+        width : calc(100% - 40px);
+        padding : 0 20px;
+    }
+    .toggleListGroup.noticeSort .liMConGroup .bdBtn.showSpecBtn {
+        right : 20px;
+        top : 20px;
+    }
+    .noticeTitleGroup .titleLayer {
+        padding-top: 18px;
+        line-height : 1;
+    }
+
+    .moveToPGtab.myPgSort .tOnlyBtn {
+        width : auto;
+        padding : 15px;
+    }
+    /* :: close : 폰사요몰M_마이페이지(1:1문의) 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_마이페이지(회원정보수정#1) 페이지 파트. */
+    .rtSection.certSort .titleBox.sectSort .mainTitle {
+        text-align : center;
+    }
+    /* :: close : 폰사요몰M_마이페이지(회원정보수정#1) 페이지 파트. */
+
+    /* :: open : 폰사요몰M_마이페이지(회원정보수정#2) 페이지 파트. */
+    .tBoxGroup.btnMixSort .bgBtn.mobLSort {
+        right : 20px;
+    }
+    .togBtnGroup .titleBox {
+        font-size : 14px;
+        letter-spacing : -1px;
+    }
+    .regGroup.regGoodsSort {
+        margin-bottom: 0;
+    }
+    .popup {
+        width : calc(100% - 40px);
+        max-width : 450px;
+    }
+    .popup .popCon {
+        padding : 30px 20px 20px 20px;
+    }
+    .popup .popCon.widePd {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* :: close : 폰사요몰M_마이페이지(회원정보수정#2) 페이지 파트. */
+
+    /* :: open : 폰사요몰M_상품상세(상품정보) 페이지 파트. */
+    .vStackGroup.showOtherSort.webOnlySort {
+        display : none;
+    }
+    .vStackGroup.gdInfoSort.webOnlySort {
+        display : none;
+    }
+    .btnGroup.vStkBotEqualSort.webOnlySort {
+        display : none;
+    }
+    .moveToPGtab.tripleSort {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .tabLinkedImgBox.gdSpecSort.webOnlySort {
+        display : none;
+    }
+    .imgUploadBox {
+        width: calc(20% - 10px);
+        height: auto;
+        padding-top: calc(20% - 10px);
+        margin-right: 10px;
+    }
+    .imgUploadBox:before {
+        display : none;
+    }
+    .imgUploadBox:after {
+        width : 100%;
+        height : 100%;
+        top : 0;
+        left : 0;
+    }
+    .tarea.botLiner {
+        font-size : 16px;
+    }
+    /* :: close : 폰사요몰M_상품상세(상품정보) 페이지 파트. */
+
+    /* :: open : 폰사요몰M_커뮤니티_공지사항 페이지 파트. */
+    .listTopGroup.schSort .tboxGroup {
+        padding : 0 20px;
+        width : calc(100% - 40px);
+    }
+    .listTopGroup.schSort .tboxGroup .iconBtn.searchSort {
+        right: 20px;
+        width: 40px;
+        height: 36px;
+    }
+    .listTopGroup.schSort .tboxGroup .tbox {
+        width : calc(100% - 54px);
+        padding-left : 0;
+    }
+    .moveToPGtab.commPGrSort {
+        overflow : auto;
+        white-space: nowrap;
+    }
+    .toggleListGroup.noticeSort .liMConGroup .bdBtn.botAbSort {
+        position : static;
+        margin-left : auto;
+        display : block;
+        margin-top : 20px;
+    }
+    .bannerGroup.pgTopSort {
+        margin-top : 40px;
+        margin-bottom : 40px;
+    }
+    /* :: close : 폰사요몰M_커뮤니티_공지사항 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_커뮤니티_자주묻는질문 페이지 파트. */
+    .listTopGroup.schSort {
+        margin-bottom : 30px;
+    }
+    .titleLayer .leftTitle.withQMark {
+        width: calc(100% - 40px);
+        vertical-align : middle;
+    }
+    .liMConGroup .qnaMark, .liTogGroup .qnaMark {
+        padding-right: 20px;
+    }
+    .rightMainTitle.withQMark {
+        display : block;
+        padding-top : 20px;
+        width : 100%;
+    }
+    .liMConGroup .togIconBtn.withQMark {
+        top : 0;
+        right : 0;
+        transform: none;
+        -webkit-transform: none; 
+        width : 100%;
+        height : 100%;
+        background: url(/img/arrow_down.png) no-repeat top 20px right 20px / 12px 6px;
+    }
+    .liTogGroup.noticeSort {
+        padding : 20px;
+    }
+    .commentGroup.inListSort.revSpSort .commMainInfo .commDivision.mobSdPdSort {
+        margin-left : 20px;
+    }
+    .btnGroup.toListSort {
+        padding : 20px 20px 0 20px;
+        display : block;
+    }
+    .btnGroup.toListSort .bgBtn {
+        width : 100%;
+        display : block;
+    }
+    /* :: close : 폰사요몰M_커뮤니티_자주묻는질문 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_커뮤니티_이용후기 페이지 파트. */
+    .commList.mobPdSort {
+        padding : 0 20px;
+    }
+    .commList.mobPdSort li {
+        width : calc(50% - 5px);
+        margin-left: 10px;
+    }
+    .commList.mobPdSort li:nth-child(2n + 1) {
+        margin-left : 0;
+    }
+    .commList.mobPdSort li:nth-child(n + 3) {
+        margin-top : 15px;
+    }
+    /* :: close : 폰사요몰M_커뮤니티_이용후기 페이지 파트. */
+
+    /* :: open : 폰사요몰M_기업전용코너 페이지 파트. */
+    .moveToPGtab.coOnlySort {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .moveToPGtab.coOnlySort .tOnlyBtn {
+        width : auto;
+        padding : 1px 17px 15px 17px;
+    }
+    .infoGroup.corpOnlyTop {
+        padding : 0 20px;
+    }
+    .infoGroup.corpOnlyTop li {
+        width : calc(50% - 7px);
+        height : auto;
+        margin-left : 10px;
+        padding : 30px 0;
+    }
+    .infoGroup.corpOnlyTop li img {
+        width : 45px;
+    }
+    .infoGroup.corpOnlyTop .titleBox {
+        padding-top : 20px;
+        font-size : 15px;
+    }
+    .infoGroup.corpOnlyTop .phNumBox {
+        font-size : 13px;
+        padding-top : 8px;
+    }
+    .infoGroup.corpOnlyTop li:nth-child(2n + 1) {
+        margin-left : 0;
+    }
+    .infoGroup.corpOnlyTop li:nth-child(n + 3) {
+        margin-top : 20px;
+    }
+    /* :: close : 폰사요몰M_기업전용코너 페이지 파트. */
+
+    /* :: open : 폰사요몰M_메인 페이지 파트. */
+    .commList.mulSlideSort {
+        overflow : hidden;
+    }
+    .fullBanConGroup {
+        width : 100%;
+        height : 100%;
+        margin-left : 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .sliderGroup.pgTopSort.mobOnlySort {
+        display : block;
+    }
+    .sliderGroup.pgTopSort.webOnlySort {
+        display : none;
+    }
+    .sliderAbBtn.mobOnlySort {
+        display : block;
+    }
+    .sliderAbBtn {
+        position : absolute;
+        top : 40%;
+        left : 50%;
+        transform : translateX(-50%);
+        font-size : 15px;
+        font-size : 14px;
+        font-weight : 800;
+        color : #1d39b2;
+        text-decoration : underline;
+        text-underline-position: under;
+    }
+    .fullWidthBanner {
+        height : auto;
+        position : relative;
+        padding-top : 70%;
+        overflow : hidden;
+    }
+    .fullWidthBanner .nowStatTitle {
+        line-height : 30px;
+        height : auto;
+    }
+    .nowStatTitle span {
+        font-size : 22px;
+    }
+    .nowStatTitle .titleAbSort {
+        position : static;
+        transform : none;
+        -webkit-transform : none;
+        padding : 25px 0 0 20px;
+        /* transform : none;
+        -webkit-transform : none;
+        top : 25px;
+        left : 20px; */
+    }
+    .fullWidthBanner .fullBanImg.mobOnlySort {
+        display : block;
+        transform : none;
+        -webkit-transform : none;
+        top : 0;
+        left : 0;
+        width : 100%;
+        height : 100%;
+    }
+    .fullWidthBanner .fullBanImg.webOnlySort {
+        display : none;
+    }
+    .fullWidthBanner .nowStatCdBox {
+        margin : 10px auto 0 auto;
+        padding : 10px 0;
+        width : calc(100% - 20px);
+        max-width : 320px;
+        display : block;
+        font-size : 12px;
+        position : absolute;
+        bottom : 20px;
+        left : 50%;
+        transform : translateX(-50%);
+        -webkit-transform : translateX(-50%);
+    }
+    .fullWidthBanner .nowStatCdBox.fstChd {
+        margin-left : auto;
+        bottom : 85px;
+    }
+    .nowStatCdBox .nowStatNumTxt {
+        font-size : 17px;
+        margin-top : 4px;
+    }
+    .mainCon.mulSlideSort .commList li {
+        max-width : auto;
+        width : calc(50% - 5px);
+        margin-left : 10px;
+    }
+    .commList.mulSlideSort li:first-child {
+        margin-left : 0;
+    }
+    .mainCon.mulSlideSort .commList li:nth-child(2n+1) {
+        margin-left : 0;
+    }
+    .mainCon.mulSlideSort .commList li:nth-child(n + 3) {
+        margin-top : 15px;
+    }
+    .bannerGroup .bannerRelCase img.webOnlySort {
+        display : none;
+    }
+    .bannerGroup .bannerRelCase img.mobOnlySort {
+        display : block;
+    }
+    .relCasePosGroup {
+        bottom: 18%;
+        height: 14%;
+    }
+    .relCasePosGroup .relCaseBtn {
+        width : 40%;
+    }
+    .goodsList.leftCurSort {
+        width : calc(100% - 40px);
+    }
+    .goodsList.leftCurSort li {
+        width: calc(50% - 7px);
+        margin-left : 10px;
+    }
+    .goodsList.leftCurSort li:nth-child(2n+1) {
+        margin-left: 0;
+    }
+    .goodsList.leftCurSort li:nth-child(n + 3) {
+        margin-top: 20px;
+    }
+    .currGroup.withKakaoMod {
+        max-width : 100%;
+        margin-left : 0;
+        padding : 0;
+    }
+    .kakaoCurrGroup.webOnlySort {
+        display : none;
+    }
+    .kakaoCurrGroup.mobOnlySort {
+        display : block;
+        background: none;
+        height : auto;
+        position : relative;
+        margin-top : 70px;
+    }
+    .kakaoCurrGroup .currBtn.mobKkoSort {
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        width: 80%;
+        height: 45%;
+        left: 10%;
+    }
+    .currGroup.withKakaoMod .purcStatusTopGroup {
+        width: calc(100% - 82px);
+        margin: 0 auto;
+    }
+    .currGroup.withKakaoMod .purcStatus {
+        width : calc(100% - 42px);
+        margin : 0 auto;
+    }
+    .mainCon.mulListSort.mobBotShPdSort {
+        padding-bottom : 45px;
+    }
+    .relCasePosGroup.customBot {
+        font-size : 14px;
+        left : 6%;
+    }
+    /* :: close : 폰사요몰M_메인 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_슬라이드메뉴 페이지 파트. */
+    .popup.hamPop {
+        /* position : absolute; */
+        position : fixed;
+        top : 0;
+        left : 0;
+        transform : none;
+        -webkit-transform : none;
+        width : 100%;
+        height : 100%;
+        background-color : #fff;
+        /* display : block; */
+        z-index : 150;
+        overflow-y : auto;
+    }
+    .popup .popCon.mobHamSort {
+        padding : 90px 30px;
+        /* overflow-y : auto; */
+    }
+    .popupTitleBox .mainTitle.mobHamSort {
+        display : inline-block;
+        font-size : 13px;
+        margin-left : 30px;
+    }
+    .popupTitleBox .mainTitle.mobHamSort.fstChd {
+        margin-left : 0;
+    }
+    .popupTitleBox .mainTitle.mobHamSort.hide {
+        display : none;
+    }
+    .popup .closePopBtn.hamCloseSort {
+        top : 40px;
+        right : 40px;
+        width : 20px;
+        height : 20px;
+    }
+    .hamBtnList {
+        padding-top : 35px;
+        font-size : 0;
+    }
+    .hamMenuGroup {
+        margin-top : 30px;
+    }
+    .hamMenuGroup.fstChd {
+        margin-top : 0;
+    }
+    .hamMenuGroup .menuBtn.fstLayered {
+        font-size : 20px;
+        padding : 0 10px;
+        font-weight : 800;
+        font-family : "MGothic", sans-serif;
+    }
+    .hamMenuGroup .menuBtn.activated {
+        position : relative;
+    }
+    .hamMenuGroup .menuBtn.activated:before {
+        content : "";
+        position : absolute;
+        top : 50%;
+        left : 0;
+        border-top : 2px solid #1d39b2;
+        width : 100%;
+    }
+    .hamMenuGroup .menuBtnGroup.sndLayered {
+        margin-top : 25px;
+        padding : 0 10px;
+    }
+    .hamMenuGroup .menuBtnGroup.sndLayered .menuBtn {
+        display : block;
+        font-size : 14px;
+        margin-top : 20px;
+        font-weight : 800;
+        font-family : "MGothic", sans-serif;
+    }
+    .hamMenuGroup .menuBtnGroup.sndLayered .menuBtn.fstChd {
+        margin-top : 0;
+    }
+    /* :: close : 폰사요몰M_슬라이드메뉴 페이지 파트. */
+
+
+    /* :: open : 리퍼&수리 메인 페이지 모바일 파트. */
+    .tipBox {
+        font-size : 11px;
+    }
+    /* :: close : 리퍼&수리 메인 페이지 모바일 파트. */
+
+
+    /* :: open : 폰사요몰M_내폰구입메인 페이지 파트. */
+    .slideBanGroup.buyMyPRSort {
+        width : 100%;
+    }
+    .goodsList.mobTPdSort {
+        padding-top : 65px;
+    }
+    .mainCon.onlyImgSort {
+        width : calc(100% - 20px);
+        padding : 10px;
+    }
+    /* :: close : 폰사요몰M_내폰구입메인 페이지 파트. */
+
+
+    /* :: open : 입점 문의 페이지 페이지 파트. */
+    .imgBtn.chainRegSort {
+        right : 10px;
+        top : -45px;
+    }
+    .imgBtn.chainRegSort img {
+        width : 100px;
+    }
+    /* :: close : 입점 문의 페이지 페이지 파트. */
+
+
+    /* :: open : 개인정보 처리방침 페이지 페이지 파트. */
+    pre.mobSidePdSort {
+        padding : 0 10px 40px 10px;
+        font-size : 12px;
+        line-height : 15px;
+    }
+    /* :: close : 개인정보 처리방침 페이지 페이지 파트. */
+
+
+    /* :: open : 탈퇴하기 기능 페이지 파트. */
+    .popInfoBox .txtBox.longTermSort {
+        font-size : 14px;
+        line-height : 1.2;
+    }
+    /* :: close : 탈퇴하기 기능 페이지 파트. */
+
+
+    /* :: open : 기업전용 고객후기 리스트 페이지 파트. */
+    .toggleListGroup.noticeSort .liMConGroup .bdBtn {
+        top : auto;
+        bottom : 10px;
+    }
+    /* :: close : 기업전용 고객후기 리스트 페이지 파트. */
+
+
+    /* :: open : 폰사요몰_로그인(회원) 페이지 페이지 파트. */
+    .mainCon.userRegSort.mobOnlySort {
+        margin-top : 15px;
+    }
+    .chkBlock.mobLogOnlySort {
+        padding-top : 20px;
+    }
+    .regGroup.findUserInfoSort.mobLogSort {
+        padding: 0 20px;
+        margin-bottom: 15px;
+    }
+    .linkToGroup.logSort {
+        text-align : center;
+        padding-top : 30px;
+    }
+    /* :: close : 폰사요몰_로그인(회원) 페이지 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_주문하기 페이지 파트. */
+    .lSideNavMate {
+        display : block;
+        width : 100%;
+        padding-right : 0;
+    }
+    .rSideNavTube {
+        display : block;
+        position : static;
+        width : calc(100% - 40px);
+        padding : 20px;
+        border-top : 1px solid #dddddd;
+
+    }
+    .mainCon.withRNavSort .titleBox.sectCSort {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    .combiTrigTop .btn.combiTogSort {
+        padding : 20px;
+    }
+    .combiTrigTop .btn.combiTogSort:before {
+        right: 23px;
+        top: 20px;
+    }
+    .gdInfoTbl.webOnlySort {
+        display : none;
+    }
+    .gdInfoTbl.mobOnlySort {
+        display : block;
+    }
+    .mobOdrListTitle {
+        text-align : left;
+        padding-left : 20px;
+    }
+    .mobOdrListLInfo {
+        text-align : right;
+        width : calc(100% - 20px);
+        padding-left : 20px;
+    }
+    .mobOdrListLInfo .tblMinImg {
+       width : 100%;
+    }
+    .mobOdrListRInfo {
+        text-align : right;
+        width : calc(100% - 35px);
+        padding-left : 15px;
+    }
+    .gdInfoTbl th {
+        padding : 15px 0;
+    }
+    .togCombList.narrPdSort {
+        padding: 30px 20px 0 20px
+    }
+    .noticeTxt.pointUseSort {
+        position : static;
+    }
+    .togCombList.narrPdBotSort {
+        padding : 20px 20px 30px 20px;
+    }
+    .btnGroup.paySelSort {
+        padding-bottom: 20px;
+    }
+    .btnGroup.paySelSort .bdBtn.selSort {
+        width : calc(50% - 22px);
+        vertical-align : top;
+        margin-left : 20px;
+    }
+    .btnGroup.paySelSort .bdBtn.selSort.fstChd {
+        margin-left : 0;
+    }
+    .btnGroup.paySelSort .bdBtn.selSort:nth-child(n + 3) {
+        margin-top : 10px;
+    }
+    .btnGroup.paySelSort .bdBtn.selSort:nth-child(3) {
+        margin-left : 0;
+    }
+    .togCombList.narrPdBotSort .tBoxGroup.btnMixSort .tbox {
+        width: calc(100% - 80px);
+        padding-right: 64px;
+    }
+    .regGroup.regGoodsSort .tBoxGroup.btnMixSort .tbox {
+        width: calc(100% - 80px);
+        padding-right: 64px;
+    }
+    .regGroup.regGoodsSort .tBoxGroup.btnMixSort .bgBtn {
+        padding : 0 7px;
+        right : 0;
+    }
+    .tBoxGroup.btnMixSort .bgBtn.pointUseSort {
+        bottom : 12px;
+        right : 0;
+    }
+    /* :: close : 폰사요몰M_주문하기 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_중고장터_마애피에지(받은문의) 페이지 파트. */
+    .userCardGroup {
+        padding: 30px 0 25px 0;
+    }
+    .userCardGroup .userCardBox {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+    .userCardGroup .specInfoBox {
+        width : 100%;
+        max-width : 320px;
+        display : block;
+        margin : 0 auto;
+        padding-left : 0;
+    }
+    .userCardGroup .specInfoBox .lowerGroup .bdBtn {
+        position : static;
+        display : block;
+        margin : 20px auto 0 auto;
+    }
+    .moveToPGtab.sndMySort {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .moveToPGtab.sndMySort .tOnlyBtn {
+        width : auto;
+        padding : 15px;
+    }
+    .listDateGroup .userNameBox {
+        padding-right : 15px;
+    }
+    .liMConGroup.mobNarrPdSort {
+        padding: 20px 20px 0 20px;
+    }
+    .liMConGroup.mobNarrPdSort .infoGroup {
+        display : inline-block;
+        width : calc(100% - 135px);
+        padding: 25px 0 0 15px;
+        vertical-align : top;
+    }
+    .liMConGroup.mobNarrPdSort .listDateGroup {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .liMConGroup.mobNarrPdSort .purchImg {
+        padding-top : 25px;
+    }
+    .liMConGroup.mobNarrPdSort .bdBtn {
+        width : 100%;
+        position : static;
+        margin-top : 15px;
+    }
+    .liTogGroup.mobNarrPdSort {
+        padding: 20px;
+        margin-top : 20px;
+    }
+    .liTogGroup.mobNarrPdSort .bdBtn {
+        width : 100%;
+    }
+    .liMConGroup .infoGroup .bulkHead.webOnlySort {
+        display : none;
+    }
+    .liMConGroup .infoGroup .mobBlkSort {
+        display : block;
+        line-height : 15px;
+    }
+
+    .commMainInfo .commDivision {
+        display : block;
+    }
+    .commMainInfo .commInfoLiner {
+        display : block;
+        padding-left : 0;
+        padding-top : 15px;
+        width : 100%;
+    }
+    .commentGroup.inListSort .commAddGroup {
+        padding: 20px;
+    }
+    .tBoxGroup.btnMixSort .tbox.mobFSzdSort {
+        width: calc(100% - 40px);
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .tBoxGroup.btnMixSort .bgBtn.mobFSzdSort {
+        position : static;
+        display : Block;
+        width: calc(100% - 40px);
+        padding: 10px 20px;
+        margin-top : 15px;
+    }
+    .listTopCounter {
+        padding: 30px 20px 20px 20px;
+    }
+    .goodsList.withStatSort li {
+        width : calc(50% - 8px);
+        margin-left : 11px;
+    }
+    .goodsList.withStatSort li .infoGroup .prcBox {
+        font-size : 17px;
+    }
+    .gdImgBox .cdBoxStat {
+        top: 10px;
+        left: 10px;
+    }
+    .goodsList.withStatSort li:nth-child(2n + 1) {
+        margin-left : 0;
+    }
+    /* :: close : 폰사요몰M_중고장터_마애피에지(받은문의) 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_지점상세 페이지 파트. */
+    .saleGdImgBox.rectCenSort {
+        padding-top: 100%;
+        width: 100%;
+    }
+    .saleGdOpSelGroup.branchMod {
+        width : 100%;
+    }
+    .vertSepDownGroup .titleBox.branchLSort .subTitle {
+        padding-top : 10px;
+    }
+    .infoBox.branchLSort .infoSeg .titleMini {
+        width : 80px;
+        min-width : auto;
+        font-size : 13px;
+    }
+    .infoBox.branchLSort .infoSeg .infoMini {
+        min-width : auto;
+        width : calc(100% - 80px);
+        text-align : right;
+        letter-spacing: -0.6px;
+        font-size : 13px;
+    }
+    .infoBox.branchLSort .infoSeg {
+        padding-top : 15px;
+    }
+    .mapIndiCaGroup {
+        padding-top : 10px;
+    }
+    .vertLineGoodInfo.gdSpecSort {
+        padding : 55px 40px 20px 40px;
+    }
+    .banUnBanGroup .halfBanImg {
+        width : calc(100% - 40px);
+        display : block;
+        margin : 10px auto 0;
+    }
+    .banUnBanGroup .halfBanImg.fstChd {
+        margin : 0 auto;
+    }
+    /* :: close : 폰사요몰M_지점상세 페이지 파트. */
+
+    
+    /* :: open : 폰사요몰M_전국지점 페이지 파트. */
+    .moveToPGtab.scrlSort {
+        overflow: auto;
+        white-space: nowrap;
+        margin: 40px auto 20px auto;
+        -ms-overflow-style : auto;
+    }
+    .moveToPGtab .tOnlyBtn.brLocSort {
+        padding: 15px;
+    }
+    .toggleListGroup.branchSort li {
+        padding : 0 20px 20px 20px;
+        border: solid #dddddd;
+        border-width : 0 0 1px 0;
+    }
+    .liMConGroup.branchSort .branchImg {
+        width : 100%;
+    }
+    .liMConGroup.branchSort .branchImg + .vertSepGroup {
+        width: 100%;
+        padding-left: 0;
+    }
+    .infoGroup.vertSepSort .infoBox.branchLSort {
+        font-size : 0;
+    }
+    /* :: close : 폰사요몰M_전국지점 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_중고장터 필터 페이지 파트. */
+    .popup.filterPop {
+        position : fixed;
+        width: 100%;
+        height : 100%;
+        min-width: auto;
+        max-width : 100%;;
+    }
+    .filterBotGroup {
+        margin-top : 25px;
+        padding: 33px 20px;
+    }
+    .popup.filterPop .popCon {
+        height: calc(100% - 137px);
+        padding: 30px 20px 0 20px;
+        overflow-y : scroll;
+    }
+    .filterBotGroup .bgBtn {
+        right: 20px;
+    }
+    /* :: close : 폰사요몰M_중고장터 필터 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_주문목록 페이지 파트. */
+    .titleLayer .rightMainTitle.mobRAlignSort {
+        text-align : right;
+    }
+    .combiTrigTop.underListSort {
+        padding-top : 0;
+    }
+    .btnGroup.regBotPdCSort .bdBtn.mobHfSort {
+        width: calc(50% - 3px);
+        padding: 0;
+        display: inline-block;
+    }
+    .btnGroup.regBotPdCSort .bgBtn.mobHfSort {
+        padding : 0;
+        width: calc(50% - 3px);
+    }
+    .btnGroup.regBotPdCSort .bdBtn.mobHfSort + .bgBtn.mobHfSort {
+        margin-left: 3px;
+    }
+    .btnGroup.regBotPdCSort.mobPdNarSort {
+        padding : 0 20px;
+        width : calc(100% - 40px);
+    }
+    /* :: close : 폰사요몰M_주문목록 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_장바구니 페이지 파트. */
+    .popup.cartSort {
+        width : 100%;
+        max-width : 100%;
+        position : fixed;
+        overflow-y : auto;
+    }
+    .popup.cartSort .popCon {
+        width : calc(100% - 40px);
+        padding: 70px 20px 40px 20px;
+    }
+    /* :: close : 폰사요몰M_장바구니 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_장바구니 페이지 파트. */
+    .popGdSelGroup .lSideImgBox {
+        display : block;
+        width : 100%;
+        height : auto;
+        padding-bottom : 15px;
+    }
+    .popGdSelGroup .rSideSelBox .vStackGroup .titleBox.webOnlySort {
+        display : none;
+    }
+    .popGdSelGroup .lSideImgBox img.webOnlySort {
+        display : none;
+    }
+    .popGdSelGroup .lSideImgBox img.mobOnlySort {
+        display : inline-block;
+        width : 35%;
+        vertical-align : top;
+    }
+    .titleBox.mobNearImgSort {
+        font-size : 13px;
+        display : inline-block;
+        width : calc(65% - 10px);
+        padding-left : 10px;
+        vertical-align : top;
+    }
+    .popGdSelGroup .rSideSelBox {
+        width : 100%;
+        padding-left : 0;
+    }
+    .uberPop {
+        width: calc(100% - 40px);
+        max-width: 450px;
+    }
+    .btnGroup.delBotSort .bdBtn.mobHfSort {
+        width: calc(50% - 5px);
+    }
+    .btnGroup.delBotSort .bgBtn.mobHfSort {
+        width: calc(50% - 5px);
+    }
+    .btnGroup.delBotSort {
+        width : 100%;
+    }
+    .btnGroup.delBotSort .bdBtn.mobHfSort + .bgBtn.mobHfSort {
+        margin-left : 3px;
+    }
+    .btnGroup.regBotPdSort .bgBtn {
+        width : 100%;
+        padding : 0;
+    }
+    /* .iconBtn.heartIcon {
+        vertical-align : top;
+    } */
+    .liMConGroup .vertSepGroup .listDateGroup {
+        position : static;
+        float : none;
+    }
+    .vertSepUpGroup.mobShortPdSort {
+        padding-bottom : 15px;
+    }
+    .liMConGroup .vertSepUpGroup.mobShortPdSort .infoGroup.vertSepSort {
+        width : 100%;
+    }
+    .toggleListGroup.gdSpecSort .commentGroup.inListSort.revSpSort .commMainInfo.mobNarrPdSort {
+        padding : 20px;
+    }
+    /* :: close : 폰사요몰M_장바구니 페이지 파트. */
+
+
+    /* :: open : 폰사요몰_커뮤니티(이용후기상세) 페이지 파트. */
+    .commList li.mobDoubSort {
+        width : calc(50% - 5px);
+        margin-left: 10px;
+    }
+    .commList li.mobDoubSort:first-child {
+        margin-left : 0;
+    }
+    .commList li.mobDoubSort:nth-child(2n + 3) {
+        margin-left : 0;
+    }
+    .commList li.mobDoubSort:nth-child(n + 3) {
+        margin-top : 10px;
+    }
+    /* :: close : 폰사요몰_커뮤니티(이용후기상세) 페이지 파트. */
+
+
+    /* :: open : 폰사요몰_기업전용코너(이용후기) 페이지 파트. */
+    .commList .infoGroup.cdBoxSort .titleBox {
+        line-height : 18px;
+    }
+    /* :: close : 폰사요몰_기업전용코너(이용후기) 페이지 파트. */
+
+
+    /* :: open : 폰사요몰M_매각신청서작성 페이지 dev 요청 추가 파트. */
+    /* :: open : 추가 그룹. 20201003_1731. */
+    .regGroup.regGoodsSort.mobBotPdSort {
+        padding-bottom : 20px;
+    }
+    .radioSiblingCase.blLabelSort {
+        padding-bottom: 30px;
+    }
+    /* :: close : 추가 그룹. 20201003_1731. */
+    /* :: close : 폰사요몰M_매각신청서작성 페이지 dev 요청 추가 파트. */
+
+
+    /* :: open : ksg_20201005_0037 : 폰사요몰_중고장터 물품등록 페이지 추가 파트. */
+    /* :: open : 추가 그룹. 20201005_1124.  */
+    .tarea.roundBorder {
+        font-size : 14px;
+    }
+    /* :: close : 추가 그룹. 20201005_1124.  */
+    /* :: close : ksg_20201005_0037 : 폰사요몰_중고장터 물품등록 페이지 추가 파트. */
+
+
+    /* :: open : ksg_20201005_1225 : 폰사요몰_물품상세(상품정보) 페이지 추가 파트. */
+    /* :: open : 추가 그룹.  */
+    .bgBtn.mobBotHfSort {
+        display: inline-block;
+        width: 50%;
+        height: 52px;
+        line-height: 52px;
+        vertical-align : top;
+    }
+    .bdBtn.mobBotHfSort {
+        display: inline-block;
+        width: calc(50% - 2px);
+        height: 50px;
+        line-height: 52px;
+        font-size: 18px;
+        font-weight: 800;
+        color: #1d39b2;
+        background-color : #fff;
+        border-width : 1px;
+        vertical-align : top;
+    }
+    /* :: close : 추가 그룹.  */
+    /* :: close : ksg_20201005_1225 : 폰사요몰_물품상세(상품정보) 페이지 추가 파트. */
+
+
+    /* :: open : ksg_20201005_1435 : 폰사요몰_중고장터 메인 페이지 추가 파트. */
+    /* :: open : 추가 그룹. 20201005_1436. */
+    .popup.filterPop.underBtnSort {
+        top : 0;
+    }
+    /* :: close : 추가 그룹. 20201005_1436. */
+    /* :: close : ksg_20201005_1435 : 폰사요몰_중고장터 메인 페이지 추가 파트. */
+
+
+    /* :: open : 폰사요몰M_내폰구입메인 페이지 추가 파트. */
+    /* :: open : 추가 그룹. 20201006_2127. */
+    .goodsList li.empListNotice {
+        padding : 0;
+    }
+    .goodsList li.empListNotice img {
+        width : 140px;
+    }
+    .goodsList li.empListNotice .empReasTxt {
+        padding-top : 25px;
+        font-size : 18px;
+    }
+    /* :: close : 추가 그룹. 20201006_2127. */
+    /* :: close : 폰사요몰M_내폰구입메인 페이지 추가 파트. */
+
+
+    /* :: open : 폰사요몰_중고장터 마이페이지(구매물품) 페이지 추가 파트. */
+    /* :: open : 변경 그룹. 20201006_2335. */
+    /* .commentGroup.inListSort .commMainInfo {
+        padding: 20px;
+    } */
+    .commentGroup.inListSort .commMainInfo {
+        padding: 20px;
+        position : relative;
+    }
+    .commMainInfo .commWriterInfo {
+        position : absolute;
+        top : 20px;
+        right : 20px;
+    }
+    .commMainInfo .commWriterInfo .idDispTxt {
+        padding-right : 15px;
+    }
+    /* :: close : 변경 그룹. 20201006_2335. */
+    /* :: close : 폰사요몰_중고장터 마이페이지(구매물품) 페이지 추가 파트. */
+
+
+    /* :: open : ksg_20201127_0341 : 폰사요몰_중고장터_물품등록 페이지 추가 파트.  */
+    /* :: open : 삭제된 기존 내용. */
+    /* .rtSection {
+        width : calc(100% - 40px);
+        padding : 0 20px;
+    } */
+    /* :: close : 삭제된 기존 내용. */
+    /* :: open : 수정된 기존 내용. */
+    /* :: open : 신규 추가 내용. */
+    .rtSection {
+        width : calc(100% - 40px);
+        padding : 0 20px;
+        max-width: 100%;
+    }
+    /* :: close : 신규 추가 내용. */
+    .sbox.tripleSort {
+        width: calc(50% - 8px);
+        margin-right : 16px;
+    }
+    .sbox.tripleSort.sndChd {
+        margin-right : 0;
+    }
+    .sbox.tripleSort.lstChd {
+        width : 100%;
+    }
+    /* :: close : 신규 추가 내용. */
+    /* :: close : ksg_20201127_0341 : 폰사요몰_중고장터_물품등록 페이지 추가 파트.  */
+
+
+
+
+}
