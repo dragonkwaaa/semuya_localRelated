@@ -2868,6 +2868,7 @@ table.deliTypeInfo.mobOnlySort {
     line-height : 20px;
     font-weight : 400;
 }
+
 .rtSection.certSort {
     max-width : 560px;
 }
@@ -5097,3 +5098,15 @@ header {
 }
 /* :: innerC : 기존 내용 수정 파트. */
 /* :: close : ksg_20201220_2206 : [세무야] 회원가입 페이지 파트. */
+
+
+/* :: open : ksg_20201226_2027 : [세무야] 모의진단 페이지 파트. */
+/* :: innerO : 신규 내용 파트. */
+.titleBox.sectCSort .subTitle {
+    padding-top : 20px;
+    font-size : 16px;
+    line-height : 20px;
+    font-weight : 400;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: open : ksg_20201226_2027 : [세무야] 모의진단 페이지 파트. */
