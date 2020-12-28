@@ -5109,4 +5109,66 @@ header {
     font-weight : 400;
 }
 /* :: innerC : 신규 내용 파트. */
-/* :: open : ksg_20201226_2027 : [세무야] 모의진단 페이지 파트. */
+/* :: close : ksg_20201226_2027 : [세무야] 모의진단 페이지 파트. */
+
+/* :: open : ksg_20201227_1831 : [세무야] 진단하기 페이지 파트. */
+/* :: innerO : 신규 내용 파트. */
+.titleBox.segMinSort {
+    font-size : 20px;
+    padding-bottom : 20px;
+}
+.titleBox.segMinSort .subTitle {
+    font-size : 12px;
+    padding-top : 5px;
+    color : #979797;
+}
+.regGroup.measureSort .tBoxGroup {
+    margin-top: 16px;
+    font-size : 0;
+}
+.regGroup.measureSort {
+    margin-bottom: 90px;
+}
+
+.radioGroup.numCountSort input[type="radio"]:checked + label {
+	display : block;
+	width : 16px;
+    height : 16px;
+    line-height : 16px;
+    font-size : 14px;
+    text-align : center;
+    background : none;
+    background-color : #d22e1e;
+    color : #d22e1e;
+    border : 1px solid #000;
+    border-radius : 50%;
+}
+.radioGroup.numCountSort input[type="radio"]:not(:checked) + label {
+	display : block;
+	width : 16px;
+    height : 16px;
+    line-height : 16px;
+    font-size : 14px;
+    text-align : center;
+    background : none;
+    border : 1px solid #000;
+    border-radius : 50%;
+}
+.radioGroup.numCountSort .radioCase {
+    font-size : 0;
+    margin-left : 30px;
+}
+.radioGroup.numCountSort .radioCase:first-child {
+    margin-left : 0;
+}
+.tbox.shortSort {
+    width : 90px;
+}
+.tbox.normSort {
+    width : 280px;
+}
+.tbox.horizGapSort {
+    margin-left : 10px;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20201227_1831 : [세무야] 진단하기 페이지 파트. */
