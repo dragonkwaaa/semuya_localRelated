@@ -1,3 +1,4 @@
+<!-- :: ksg_2 = ksg_20201230_1717 -->
 <!-- :: ksg_1 = 20201055_1355 -->
 <!-- :: open : ksg_1 : [세무야] top 내용을 header 로 편입시키기 위한 태그 추가 구역. -->
 <header>
@@ -14,7 +15,12 @@
                     <!-- :: single : [폰스] 메뉴 호버 시 표시되는 파트 있던 곳,.  -->
                 </div>
                 <div class="textBtnGroup">
-                    <a href="/publ/risk" class="btn mainBtn">세무진단 위험도 측정</a>
+                    <!-- :: open : ksg_2 : [세무야] 실제로 연결되어야 할 페이지. 임시로 주석으로 숨겨놓음. -->
+                    <!-- <a href="/publ/risk" class="btn mainBtn">세무진단 위험도 측정</a> -->
+                    <!-- :: close : ksg_2 : [세무야] 실제로 연결되어야 할 페이지. 임시로 주석으로 숨겨놓음. -->
+                    <!-- :: open : ksg_2 : [세무야] 임시로 연결해 놓는 세무진단 측정표 관련 페이지. 개발작업을 위한 임시방편임. -->
+                    <a href="/publ/risk/riskMeasure" class="btn mainBtn">세무진단 위험도 측정</a>
+                    <!-- :: close : ksg_2 : [세무야] 임시로 연결해 놓는 세무진단 측정표 관련 페이지. 개발작업을 위한 임시방편임. -->
                 </div>
                 <div class="textBtnGroup">
                     <a href="javascript:Void(0);" class="btn mainBtn">세무상담</a>
