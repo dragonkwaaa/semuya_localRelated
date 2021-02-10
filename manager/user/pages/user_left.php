@@ -17,7 +17,7 @@
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '03') echo 'activated';?>">
-                <a href="/manager/user" class="tabBtn">
+                <a href="/manager/user/userMeasure" class="tabBtn">
 					<span>세무조사위험진단 내역</span>
 				</a>
 			</li>

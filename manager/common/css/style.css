@@ -492,5 +492,14 @@ input.tbox.datepickMod:read-only {
 	font-size : 12px;
 	margin-left : 8px;
 }
+.btn_inListDl {
+	display : inline-block;
+	height : 38px;
+	line-height : 38px;
+	padding : 0 18px;
+	background-color: #2e2f37;
+    color: #fff;
+	border-radius : 4px;
+}
 /* :: inC : 신규 내용 파트. */
 /* :: close : ksg_20210210_2052 : [세무야] 회원관리_회원목록 페이지 내용. */

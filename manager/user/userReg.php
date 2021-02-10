@@ -131,15 +131,6 @@ $rCode 					=	'02';
                                     <span class="measureGaugeTxt">원</span>
 								</td>
                             </tr>
-
-
-
-
-
-
-
-                            
-                            <!-- :: close : ksg_20210210_1740 : [세무야] 셀렉트박스. 여기서는 사용하지 않을 것이므로 주석으로 숨김처리. -->
 						</table>
                         <div class="btnGroup bottomSort">
                             <a href="/manager/law" class="btn pageCancelMod">취소</a>
