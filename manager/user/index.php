@@ -1,50 +1,51 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/head.php';
-$lCode					=	'06';
+$lCode					=	'02';
 $rCode 					=	'01';
 ?>
 <body>
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/header.php'; ?>
 	<div class="wrapper">
-		<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/law/pages/law_left.php'; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/user/pages/user_left.php'; ?>
 		<div class="contents">
 			<div class="section">
 				<div class="sectionHeadline">
 					<div class="titleBox headLineSort">
-						<div class="titleText mainMod">법령정보관리</div>
-						<div class="titleText subMod">법령목록</div>
+						<div class="titleText mainMod">회원관리</div>
+						<div class="titleText subMod">회원목록</div>
 					</div>
 					<div class="btnGroup headLineSort rightSideMod">
-						<a href="/manager/law/lawReg" class="btn">법령 등록</a>
+						<a href="/manager/law/lawReg" class="btn">회원등록</a>
 					</div>
 				</div>
 				<div class="sectionCon">
 					<div class="setField searchSort">
 						<table class="searchTable">
 							<colgroup>
-								<col width="10%">
-								<col width="40%">
-								<col width="10%">
-								<col width="40%">
+								<col style="width : 100px;">
+								<col style="width : 800px;">
 							</colgroup>
 							<tbody>
 							<tr>
-								<th>카테고리 키/명</th>
+								<th>프로세스명</th>
 								<td>
                                     <input class="tbox twinShort1" value="" placeholder="카테고리 키">
 									<input class="tbox twinLong1" value="" placeholder="카테고리명을 입력해주세요.">
 								</td>
-                                <th>문서번호</th>
+                            </tr>
+                            <tr>
+								<th>기간</th>
 								<td>
-									<div class="relative">
-                                        <input class="tbox singleNorm1" value="" placeholder="문서번호를 입력해주세요.">
+									<input id="startDate" class="tbox datepickMod" name="startDate" value="" readonly="">
+									<span class="dateRangeSign">~</span>
+									<input id="endDate" class="tbox datepickMod" name="endDate" value="" readonly="">
+									<div class="btnGroup dateTermSort">
+										<a href="javascript:setSearchDate('0d');" class="btn activated">당일</a>
+										<a href="javascript:setSearchDate('1w');" class="btn">일주일</a>
+										<a href="javascript:setSearchDate('1m');" class="btn">1개월</a>
+										<a href="javascript:setSearchDate('3m');" class="btn">3개월</a>
 									</div>
-                                </td>
-                                <!-- :: open : ksg_20210210_1504 : [세무야] 테이블 내 검색 버튼 내용. 불필요하므로 주석 처리. -->
-                                <!-- <td rowspan="2">
-									<a href="javascript:void(0);" class="searchBtn_fullHSort">검색</a>
-								</td> -->
-                                <!-- :: close : ksg_20210210_1504 : [세무야] 테이블 내 검색 버튼 내용. 불필요하므로 주석 처리. -->
+								</td>
 							</tr>
 							</tbody>
 						</table>
@@ -80,12 +81,18 @@ $rCode 					=	'01';
 						<div class="tableBox">
 							<table class="listTable">
 								<colgroup>
+									<col style="width:50px;">
+									<col style="width:100px;">
 									<col style="width:80px;">
-									<col style="width:150px;">
 									<col style="width:100px;">
+									<col style="width:80px;">
 									<col style="width:100px;">
+									<col style="width:250px;">
 									<col style="width:100px;">
+									<col style="width:120px;">
 									<col style="width:100px;">
+                                    <col style="width:100px;">
+                                    <col style="width:120px;">
 								</colgroup>
 								<thead>
 								<tr>
@@ -95,13 +102,15 @@ $rCode 					=	'01';
 											<label></label>
 										</div>
 									</th>
-									<th>카테고리키</th>
-									<th>카테고리명</th>
-									<th>분류1</th>
-									<th>분류2</th>
-                                    <th>문서번호</th>
-                                    <th>납세자 회신번호</th>
-                                    <th>제목</th>
+									<th>회사명</th>
+									<th>이름</th>
+									<th>사업자번호</th>
+									<th>업태</th>
+                                    <th>종목</th>
+                                    <th>주소</th>
+                                    <th>직전3개년매출액</th>
+                                    <th>직전3개년소득금액</th>
+                                    <th>세무조사받은경험</th>
                                     <th>등록일</th>
                                     <th>관리</th>
 								</tr>
@@ -114,13 +123,20 @@ $rCode 					=	'01';
 											<label></label>
 										</div>
                                     </td>
-                                    <td>0000000</td>
-                                    <td>특수관계자</td>
-                                    <td>분류1_1</td>
-                                    <td>분류2_1</td>
-									<td>102</td>
-                                    <td>02-1234-1234</td>
-                                    <td>특수관계자 접대비</td>
+                                    <td>
+                                        <div>에이디치히얌</div>
+										<div class="inListBtnGroup">  
+										    <a href="javascript:void(0);" class="btn borderedSort">메모</a>
+										</div> 
+									</td>
+                                    <td>곽반장</td>
+                                    <td>111-11-1111</td>
+                                    <td>도매업</td>
+									<td>생활용품 도매업</td>
+                                    <td>서울시 마포구 마포대로 </td>
+                                    <td>11,000,000원</td>
+                                    <td>11,000,000원</td>
+                                    <td>0</td>
                                     <td>2021-01-01 11:00:34</td>
                                     <td>
 										<div class="btnGroup listControlSort">
@@ -136,16 +152,23 @@ $rCode 					=	'01';
 											<label></label>
 										</div>
                                     </td>
-                                    <td>0000000</td>
-                                    <td>특수관계자</td>
-                                    <td>분류1_1</td>
-                                    <td>분류2_1</td>
-									<td>102</td>
-                                    <td>02-1234-1234</td>
-                                    <td>특수관계자 접대비</td>
+                                    <td>
+                                        <div>에이디치히얌</div>
+										<div class="inListBtnGroup">  
+										    <a href="javascript:void(0);" class="btn borderedSort">메모</a>
+										</div> 
+									</td>
+                                    <td>곽반장</td>
+                                    <td>111-11-1111</td>
+                                    <td>도매업</td>
+									<td>생활용품 도매업</td>
+                                    <td>서울시 마포구 마포대로</td>
+                                    <td>11,000,000원</td>
+                                    <td>11,000,000원</td>
+                                    <td>0</td>
                                     <td>2021-01-01 11:00:34</td>
                                     <td>
-                                        <div class="btnGroup listControlSort">
+										<div class="btnGroup listControlSort">
 											<a href="/manager/law/lawReg" class="btn small darkGreyMod">상세</a>
                                             <a href="javascript:void(0);" class="btn small pinkMod">삭제</a>
 										</div>

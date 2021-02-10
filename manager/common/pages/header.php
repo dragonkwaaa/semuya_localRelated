@@ -4,7 +4,7 @@
 	</div>
 	<div class="btnGroup headerMenuSort">
 		<a href="javascript:void(0);" class="btn <?php if($lCode == '01') echo 'activated';?>">대시보드</a>
-		<a href="javascript:void(0);" class="btn <?php if($lCode == '02') echo 'activated';?>">회원관리</a>
+		<a href="/manager/user" class="btn <?php if($lCode == '02') echo 'activated';?>">회원관리</a>
 		<a href="javascript:void(0);" class="btn <?php if($lCode == '03') echo 'activated';?>">전문가관리</a>
 		<a href="javascript:void(0);" class="btn <?php if($lCode == '04') echo 'activated';?>">세무관리</a>
 		<a href="javascript:void(0);" class="btn <?php if($lCode == '05') echo 'activated';?>">솔루션관리</a>

@@ -245,13 +245,23 @@ header .logoCase i {
 	padding : 5px 7px;
 	font-size : 12px;
 }
-.tbox.twinShort {
+.tbox.twinShort1 {
 	width : calc(35% - 14px);
+	max-width : 163px;
 	margin-right : 8px;
 }
-.tbox.twinLong {
-	width : 65%;
+.tbox.twinShort2 {
+	width : 165px;
+	margin-right : 8px;
 }
+.tbox.twinLong1 {
+	width : 65%;
+	max-width : 470px;
+}
+.tbox.twinLong2 {
+	width : 500px;
+}
+
 .tbox.singleNorm1 {
 	width : 270px;
 }
@@ -357,6 +367,7 @@ header .logoCase i {
 	padding : 0;
 	min-height : 100%;
 	margin-bottom: 20px;
+	font-size : 0;
 }
 .setField.regSort table td {
 	padding : 5px 0;
@@ -364,11 +375,6 @@ header .logoCase i {
 .setField.regSort table th {
 	padding: 0 5px 0 20px;
 }
-
-
-
-
-
 .btnGroup.bottomSort {
     font-size: 0;
     padding-top: 30px;
@@ -408,3 +414,83 @@ header .logoCase i {
 }
 /* :: inC : 신규 내용 파트. */
 /* :: close : ksg_20210210_1622 : [세무야] 관리자 법령등록 페이지 내용. */
+
+/* :: open : ksg_20210210_2052 : [세무야] 회원관리_회원목록 페이지 내용. */
+/* :: inO : 신규 내용 파트. */
+.tbox.datepickMod {
+    display: inline-block;
+    max-width: 125px;
+}
+.dateRangeSign {
+    /* margin: 0 20px; */
+    margin: 0 15px;
+    font-size: 14px;
+}
+.btnGroup.dateTermSort {
+    display: inline-block;
+    margin-left: 15px;
+    width: 270px;
+    font-size: 0;
+}
+.btnGroup.dateTermSort .btn.activated {
+    background-color: #eb6108;
+    border: 1px solid #eb6108;
+    color: #fff;
+}
+.btnGroup.dateTermSort .btn:first-child {
+    margin-left: 0;
+}
+.btnGroup.dateTermSort .btn {
+    display: inline-block;
+    max-width: 85px;
+    width: 16%;
+    height: 38px;
+    line-height: 40px;
+    border: 1px solid #e9ecef;
+    border-radius: 3px;
+    background-color: #f4f5f7;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 14px;
+}
+input.tbox.datepickMod:read-only {
+    background-color: #fff;
+}
+.inListBtnGroup {
+    display: block;
+    font-size: 0;
+    margin: 10px 0 0 0;
+}
+.inListBtnGroup .btn.borderedSort {
+    background-color: #fff;
+	border : 1px solid #d9d9d9;
+    vertical-align: middle;
+	font-size : 13px;
+	width : 60px;
+	height : 36px;
+	line-height : 38px;
+}
+.regTblBtn_inputRSort {
+	display : inline-block;
+	margin-left : 8px;
+	height : 40px;
+	line-height : 40px;
+	padding : 0 20px;
+	color : #fff;
+	font-size : 13px;
+	border-radius : 4px;
+	background-color : #2e2f37;
+}
+.sbox.normMod1 {
+    width: 165px;
+    margin-left: 8px;
+}
+.sbox.normMod1:first-child {
+    margin-left: 0;
+}
+.measureGaugeTxt {
+	font-size : 12px;
+	margin-left : 8px;
+}
+/* :: inC : 신규 내용 파트. */
+/* :: close : ksg_20210210_2052 : [세무야] 회원관리_회원목록 페이지 내용. */
