@@ -1,0 +1,556 @@
+/* :: 기초 내용 open */
+select {
+	padding: 10px 5px 10px 5px;
+    border: 1px solid #d7dae2;
+    border-radius: 4px;
+    width : 100%;
+    min-height: 13px;
+	line-height : 1.25;
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    color: #4d4f5c;
+    background-color: #fff;
+	font-family: "Noto Sans KR",sans-serif;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url(/manager/common/img/icon_dropDown.png) no-repeat right 10px top 50% / 9px 5px;
+}
+
+
+
+.sbox {
+    display: inline-block;
+	position: relative;
+	vertical-align : top;
+	width : 300px;
+}
+.sbox > a {
+    padding: 14.5px 30px;
+	border: 1px solid #d7dae2;
+	border-radius : 4px;
+	/* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05); */
+	width: calc(100% - 62px);
+	min-height : 13px;
+    display: block;
+    font-size: 13px;
+	text-align: left;
+	color : #4d4f5c;
+	background-color : #fff;
+	font-family: "Noto Sans KR",sans-serif;
+}
+
+.sbox ul {
+    position: absolute;
+    top: 43px;
+    border: 1px solid #d7dae2;
+    /* border-top: none; */
+    background-color: #fff;
+    width: calc(100% - 2px);
+    height: auto;
+    max-height: 208px;
+    overflow: auto;
+    z-index: 10;
+	display: none;
+	font-size : 13px;
+}
+.sbox ul li {
+    width: 100%;
+    text-align: left;
+}
+.sbox ul li:hover {
+	/* background-color : #60af9e;
+	color : #fff; */
+}
+.sbox ul li a {
+	padding: 17px 30px;
+	width : auto;
+	height : 100%;
+	display : block;
+	font-family: "Noto Sans KR",sans-serif;
+}
+/* .sbox:before {
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 21px;
+    right: 33px;
+	background: url(/manager/common/img/icon_dropDown.png) no-repeat center / cover;
+	z-index : 10;
+} */
+.sbox > a.opened {
+	border-radius : 3px 3px 0 0;
+}
+input::placeholder {
+	color : #cecfd0;
+}
+input:read-only {
+    background-color: #f1f1f1;
+	/* color: #b0b0b0; */
+	color : #000;
+}
+textarea:read-only {
+	background-color: #f1f1f1;
+	/* color: #b0b0b0; */
+	color : #000;
+}
+
+textarea:focus {
+	outline : none;
+}
+textarea::placeholder {
+	color : #cecfd0;
+}
+textarea:read-only {
+	background-color : #efefef;
+}
+textarea {
+	border: 1px solid #e9ecef;
+	background-color : #fff;
+	padding : 20px;
+	border-radius : 4px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	width: 100%;
+}
+.checkBoxCase {
+	position : relative;
+	display : inline-block;
+	/* width : 18px; */
+	width : auto;
+	height : 18px;
+}
+.radioCase {
+	position : relative;
+	display : inline-block;
+	width : auto;
+	height : auto;
+	margin-left : 50px;
+}
+.radioCase:first-child {
+	margin-left : 0;
+}
+input[type="checkbox"] {
+	opacity : 0;
+	width : 100%;
+	height : 18px;
+	position : absolute;
+	top : 0;
+	right : 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance : none;
+	outline : none;
+	border : none;
+	margin : 0;
+	cursor : pointer;
+}
+input[type="radio"] {
+	opacity : 0;
+	width : 100%;
+	height : 100%;
+	position : absolute;
+	top : 0;
+	right : 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance : none;
+	outline : none;
+	border : none;
+	margin : 0;
+	cursor : pointer;
+}
+input[type="checkbox"]:checked + label {
+	/* display : block; */
+	display : inline-block;
+	vertical-align : middle;
+	width : 18px;
+	height : 18px;
+	background : url("/manager/common/img/checkbox_full.png") no-repeat center / 100%;
+}
+input[type="checkbox"]:not(:checked) + label {
+	/* display : block; */
+	display : inline-block;
+	vertical-align : middle;
+	width : 18px;
+	height : 18px;
+	background : url("/manager/common/img/checkbox_empty.png") no-repeat center / 100%;
+}
+
+input[type="radio"]:checked + label {
+	display : block;
+	width : 16px;
+	height : 16px;
+	background : url("/manager/common/img/radio_full_pink.png") no-repeat center / 100%;
+}
+input[type="radio"]:not(:checked) + label {
+	display : block;
+	width : 16px;
+	height : 16px;
+	background : url("/manager/common/img/radio_empty_pink.png") no-repeat center / 100%;
+}
+.radioIconBox {
+    display: inline-block;
+	vertical-align: middle;
+	/* height : 23px; */
+}
+.radioCase .radioTitle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+	font-size: 14px;
+	font-weight : 600;
+	font-family : "Noto Sans KR",sans-serif;
+}
+.checkBoxCase .checkBoxTitle {
+	display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+	font-size: 14px;
+	font-weight : 600;
+	font-family : "Noto Sans KR",sans-serif;
+}
+.page_group {
+    text-align: center;
+    padding: 80px 0 120px;
+}
+.page_group.subPaging {
+	padding : 10px 0;
+}
+.page_group .page_box {
+    display: inline-block;
+}
+.page_group .page_box li.on {
+	background-color: #959dae;
+	border: 1px solid #959dae;
+}
+.page_group .page_box li {
+    float: left;
+    border: 1px solid #959dae;
+    width: 33px;
+	height: 33px;
+	margin-left : 5px;
+	border-radius : 4px;
+}
+.page_group .page_box li.on a {
+	/* color: #3b3b3b; */
+	color : #fff;
+    font-weight: 400;
+}
+.page_group .page_box li a {
+	display : block;
+    width: 100%;
+    height: 100%;
+    line-height: 33px;
+    font-size: 15px;
+    color: #999999;
+}
+.page_group .page_box li.arrow.prev a {
+    background: url(/common/img/icon_page_prev.png) no-repeat center / cover;
+}
+.page_group .page_box li.arrow.next a {
+    background: url(/common/img/icon_page_next.png) no-repeat center / cover;
+}
+.tbox {
+    display: inline-block;
+    font-size: 13px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 0 30px;  
+    width: auto;
+	height: 44px;
+	font-family: "Noto Sans KR",sans-serif;
+	box-sizing : border-box;
+}
+.tbox:focus {
+	outline : none;  
+}
+.tbox.long {
+	width : 400px;
+}
+.tbox.full {
+	width : 100%;
+}
+
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	width: auto;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 3px;
+}
+
+.btn.small {
+	width : 86px;
+	height : 36px;
+	line-height : 36px;
+	font-size : 16px;
+}
+.btn.purpleMod {
+	background-color : #7057d2;
+	color : #fff;
+}
+.btn.darkGreyMod {
+	background-color: #2e2f37;
+    color: #fff;
+}
+.btn.pinkMod {
+	background-color : #dd132f;
+	color : #fff;
+}
+.btn.grayMod {
+	background-color : gray; 
+	color : #fff; 
+} 
+
+.btn.yellowMod {
+	background-color : #ffab2f;
+	color : #fff;
+}
+.btn.jadeMod {
+	background-color : #1abcbd;
+	color : #fff;
+}
+.btn.lightBlueSort {
+	background-color : #3f50f6;
+	color : #fff;
+}
+.btn.deepBlueSort {
+	background-color : #32325d;
+	color : #fff;
+}
+.hide {
+	display : none;
+}
+.relative {
+	position : relative;
+}
+/* :: 기초 내용 close */
+
+
+/* :: 아이콘 파트 open */
+.logo.longSort {
+    width: 128px;
+    height: 90px;
+    vertical-align: middle;
+    background: url(/manager/common/img/logo_admin.png) no-repeat center / 99px 38px;
+}
+.goodsIcon {
+	width: 12px;
+    height: 15px;
+    vertical-align: middle;
+    background: url(/manager/common/img/icon_goods.png) no-repeat center / cover;
+}
+.dashBoardIcon {
+	width : 16px;
+	height : 15px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_dashBoard.png) no-repeat center / cover;
+}
+.quarantineIcon {
+	width : 15px;
+	height : 15px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_quarantine.png) no-repeat center / cover;
+}
+.increaseIcon {
+	width : 30px;
+	height : 30px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_increase.png) no-repeat center / cover;
+}
+.decreaseIcon {
+	width : 30px;
+	height : 30px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_decrease.png) no-repeat center / cover;
+}
+.maxNumIcon {
+	width : 30px;
+	height : 30px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_maxNum.png) no-repeat center / cover;
+}
+.minNumIcon {
+	width : 30px;
+	height : 30px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_minNum.png) no-repeat center / cover;
+}
+.handShakeIcon {
+    width : 16px;
+	height : 10px;
+	vertical-align: middle;
+    background: url(/manager/common/img/icon_handShake.png) no-repeat center / cover;
+}
+/* :: 아이콘 파트 close */
+
+
+/* :: 마진 파트 open */
+.ml10 {
+	margin-left : 10px;
+}
+.ml30 {
+	margin-left : 30px;
+}
+.mr6 {
+	margin-right : 6px;
+}
+.mt5 {
+	margin-top : 5px;
+}
+.mt8 {
+	margin-top : 8px;
+}
+.mt10 {
+	margin-top : 10px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+
+/* :: 마진 파트 close */
+
+
+/* :: 페이징 파트 open */
+.pageGroup {
+    text-align: center;
+	padding-top : 30px;
+	padding-bottom : 25px;
+	margin-bottom : 25px;
+	background-color : #fff;
+}
+/* .pageGroup.subPaging {
+	padding : 10px 0;
+} */
+.pageGroup .pageBox {
+    display: inline-block;
+}
+.pageGroup .pageBox li.activated {
+	background-color: #eb6108;
+	border: 1px solid #d9d9d9;
+}
+.pageGroup .pageBox li {
+    float: left;
+    width: 40px;
+	height: 40px;
+}
+.pageGroup .pageBox li:first-child {
+	margin-left : 0;
+}
+.pageGroup .pageBox li.activated a {
+	color : #fff;
+    font-weight: 400;
+}
+.pageGroup .pageBox li a {
+	display : block;
+    width: 100%;
+    height: 100%;
+    line-height: 42px;
+	font-size: 16px;
+	color : #000;
+}
+.pageGroup .pageBox li.prevBtn,
+.pageGroup .pageBox li.nextBtn {
+	width : 67px;
+}
+/* :: 페이징 파트 close */
+
+/* :: 글자 색상 파트 open */
+.f_pink {
+	color : #e73495;
+}
+.f_blue {
+	color : #3f50f6;
+}
+.f_red {
+	color : red;
+}
+/* :: 글자 색상 파트 close */
+
+/* :: 폰트 관련 내용 open */
+.f_noto {
+	font-family: "Noto Sans KR",sans-serif;
+}
+.f_14 {
+	font-size : 14px;
+}
+.f_11 {
+	font-size : 11px;
+}
+/* :: 폰트 관련 내용 close */
+
+/* :: open : ksg_20201201_1040 : ui내용 수정 파트. */
+/* :: open : 삭제한 기존 내용. */
+/* .btn.small {
+	width : 86px;
+	height : 36px;
+	line-height : 36px;
+	font-size : 16px;
+} */
+/* :: close : 삭제한 기존 내용. */
+/* :: open : 수정한 기존 내용. */
+.btn.small {
+	width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+/* :: close : 수정한 기존 내용. */
+/* :: close : ksg_20201201_1040 : ui내용 수정 파트. */
+
+
+/* :: open : ksg_20201229_2159 : [세무야] 판매관리 페이지 추가 내용. */
+/* :: innerO : 기존 내용 수정. */
+.btn.smallest {
+	width : 50px;
+	height : 30px;
+	line-height : 30px;
+	font-size : 12px;
+}
+.tbox.smallest {
+	width : 50px;
+	height : 30px;
+	padding : 0;
+	text-align : center;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: innerO : 신규 내용 추가. */
+.sbox.smallestSort {
+    display: inline-block;
+	position: relative;
+	vertical-align : top;
+	width : 80px;
+}
+.sbox.smallestSort select {
+	padding: 8px 25px 8px 10px;
+}
+.sbox.smallestSort:before {
+	top: 17px;
+    right: 14px;
+}
+.listTable tr {
+    border-top: 1px solid #dddddd;
+}
+.listTable th {
+    font-size: 13px;
+    font-weight: 800;
+    height: 62px;
+    background-color: #fff;
+    line-height: 20px;
+}
+.listTable td {
+    font-size: 12px;
+    text-align: center;
+    font-family: "Noto Sans KR",sans-serif;
+    padding: 14px 0;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20201229_2159 : [세무야] 판매관리 페이지 추가 내용. */
+

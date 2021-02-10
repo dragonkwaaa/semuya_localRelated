@@ -1,0 +1,410 @@
+/* :: 기초 내용 파트 open */
+html, 
+body{
+	/* background-color : #3f50f6; */
+	min-width : 1200px;
+	margin : 0 auto;
+	height : 100%;
+}
+.container {
+	margin:0 auto;
+	position:relative;
+	/* height: 100%; */
+	height : auto;
+	overflow : hidden;
+	/* min-width : 1600px; */
+	min-width : 1200px;
+	/* max-width : 1920px; */
+	/* background-color : #434ff6; */
+}
+.container.introSort {
+	height : 100%;
+	overflow : initial;
+}
+.wrapper.introSort {
+	height : 100%;
+}
+
+/* :: inO : ksg_202102101532 : [세무야] 수정을 위한 제거. */
+/* .contents {
+    margin-left: 180px;
+    position: relative;
+	width : calc(100% - 180px);
+	min-height : 1190px;
+	height : 100%;
+	background-color : #f8f8f9;
+	overflow : hidden;
+	min-height : auto;
+} */
+/* :: inC : ksg_202102101532 : [세무야] 수정을 위한 제거. */
+/* :: inO : ksg_202102101532 : [세무야] 수정된 내용.. */
+.contents {
+    margin-left: 180px;
+    position: relative;
+	width : calc(100% - 180px);
+	min-height : 1190px;
+	height : auto;
+	background-color : #f8f8f9;
+	overflow : hidden;
+	min-height : auto;
+}
+/* :: inC : ksg_202102101532 : [세무야] 수정된 내용.. */
+
+
+
+.contents.introSort {
+	background-color : #434ff6;
+	margin-left : 0;
+	width : 100%;
+	height : 100%;
+	position : relative;
+	text-align : center;
+	border : none;
+	min-height : 600px;
+}
+.contents.overlay:after {
+	content : "";
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.5);	
+	z-index : 5;
+}
+/* :: 기초 내용 파트 close */
+
+
+/* :: open : ksg_20210205_1601 : [세무야] 관리자 header 파트 내용. */
+/* :: inO : 신규 내용 파트. */
+header {
+	display : block;
+	position : relative;
+	font-size: 0;
+	height : 70px;
+	line-height : 70px;
+	background-color : #2e2f37;
+}
+header .logoCase {
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+}
+header .logoCase i {
+	width : 100%;
+	height : 100%;
+	background : url("/manager/common/img/headerLogo_1.png") no-repeat 30px center / 108px 18px;
+}
+.btnGroup.headerMenuSort .btn {
+	display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding : 0 25px;
+}
+.btnGroup.headerMenuSort {
+	display : inline-block;
+	vertical-align : middle;
+}
+.btnGroup.headerMenuSort * {
+    vertical-align : middle;
+}
+.btnGroup.headerMenuSort .btn.activated {
+	color : #eb6108;
+}
+.btnGroup.headerRightSort {
+	position : absolute;
+	top : 50%;
+	transform : translateY(-50%);
+	-webkit-transform : translateY(-50%);
+	right : 60px;
+}
+.btnGroup.headerRightSort .btn {
+	display : inline-block;
+	font-size : 13px;
+	color : #ffffff;
+}
+
+
+
+
+
+
+.tabGroup.leftSideSort {
+	float : left;
+	width : 180px;
+	position : relative;
+	font-size : 0;
+	background-color : #fff;
+}
+.tabGroup.leftSideSort:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 5000%;
+    background: #fff;
+    z-index: 0;
+}
+.tabGroup.leftSideSort .navCon {
+	position : relative;
+	z-index : 1;
+}
+.subTabGroup.secondTabSort {
+	display : none;
+}
+.subTabGroup.secondTabSort.activated {
+	display : block;
+}
+.subTabGroup.secondTabSort li .tabBtn.secondTabSort {
+	display : block;
+	font-size : 14px;
+	padding-left : 39px;
+	color : #a6a7a9;
+}
+.leftMenuTab li {
+	display : block;
+}
+.leftMenuTab li.firstTabSort {
+	padding : 15px 30px 15px 30px;
+	border-bottom : 1px solid #ebebeb;
+}
+
+.leftMenuTab li.firstTabSort .tabBtn {
+    font-size: 14px;
+	font-weight : 800;
+}
+.leftMenuTab li .tabBtn.firstTabSort span {
+    vertical-align: middle;
+}
+.leftMenuTab li.subTabSort {
+    padding: 10px 30px 10px 30px;
+}
+.leftMenuTab li.subTabSort .tabBtn {
+	font-size : 12px;
+}
+.leftMenuTab li.subTabSort.fstChd {
+	margin-top : 10px;
+}
+.leftMenuTab li.subTabSort.activated .tabBtn {
+	color : #eb6108;
+}
+.section {
+	padding : 20px 60px 0 20px;
+}
+.sectionHeadline {
+	display : block;
+	padding : 0 0 20px 0;
+	position : relative;
+}
+
+.titleBox.headLineSort .titleText.mainMod {
+	font-size : 18px;
+	font-weight : 800;
+}
+.titleBox.headLineSort .titleText.subMod {
+	margin-top : 5px;
+	font-size : 12px;
+}
+/* :: inC : 신규 내용 파트. */
+/* :: close : ksg_20210205_1601 : [세무야] 관리자 header 파트 내용. */
+
+
+/* :: open : ksg_20210209_2119 : [세무야] 관리자 법령목록 페이지 내용. */
+/* :: inO : 신규 내용 파트. */
+.btnGroup.headLineSort.rightSideMod {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btnGroup.headLineSort .btn {
+    background-color: #fff;
+	border : 1px solid #d9d9d9;
+    width: auto;
+	height : auto;
+	line-height: 1;
+	padding : 11px 20px;
+	font-size : 16px;
+}
+.setField {
+    display: block;
+    padding: 20px 0 0 0;
+	background-color : #fff;
+}
+.setField.searchSort {
+	padding : 5px 20px;
+	border-radius : 4px;
+}
+.setField.searchSort .searchTable th {
+	text-align : left;
+	font-size : 12px;
+	font-weight : 800;
+	padding-left : 20px;
+}
+.setField.searchSort .searchTable td {
+	padding : 5px 7px;
+	font-size : 12px;
+}
+.tbox.twinShort {
+	width : calc(35% - 14px);
+	margin-right : 8px;
+}
+.tbox.twinLong {
+	width : 65%;
+}
+.tbox.singleNorm1 {
+	width : 270px;
+}
+.tbox.singleNorm2 {
+	width : 330px;
+}
+.tbox.singleLong1 {
+	width : 670px;
+}
+
+.searchBtn_fullHSort {
+	display : block;
+	text-align : center;
+	height : 90px;
+	line-height : 90px;
+	width : 100px;
+	background-color : #eb6108;
+	font-size : 16px;
+	color : #fff;
+	border-radius : 4px;
+}
+.listField {
+	display: block;
+    padding: 30px 0 0 0;
+    font-size: 0;
+}
+.headLine.listUpperSort {
+	position: relative;
+    margin-bottom: 10px;
+    min-height: 44px;
+}
+.headLine.listUpperSort .ctrlBtn {
+	display : inline-block;
+    width: 85px;
+    height: 36px;
+	line-height : 36px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    font-size: 13px;
+    margin-right: 10px;
+	text-align : center;
+}
+.headLine.listUpperSort .rightPart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+	width : 100%;
+}
+.sbox.shortMod {
+	width : 100px;
+    margin-left: 8px;
+}
+.sbox.shortMod:first-child {
+    margin-left: 0;
+}
+.headLine.listUpperSort .ctrlBtn_rSort {
+	display: inline-block;
+    width: 85px;
+    height: 38px;
+    background-color: #2fa364;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 8px;
+    text-align: center;
+	line-height: 38px;
+    border-radius: 4px;
+}
+.btnGroup.searchSingleSort {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+.btnGroup.searchSingleSort .btn.searchBtn {
+    background-color: #eb6108;
+    color: #fff;
+    padding: 0 10px;
+    min-width: 145px;
+}
+.tableBox {
+	min-height: 666px;
+	background-color : #fff;
+}
+/* :: inC : 신규 내용 파트. */
+/* :: close : ksg_20210209_2119 : [세무야] 관리자 법령목록 페이지 내용. */
+
+/* :: open : ksg_20210210_1622 : [세무야] 관리자 법령등록 페이지 내용. */
+/* :: inO : 신규 내용 파트. */
+.setField table th {
+	padding: 0 30px;
+    height: 62px;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.setField table th.vertTopSort {
+	padding-top : 12px;
+	vertical-align : top;
+}
+.setField.regSort {
+	padding : 0;
+	min-height : 100%;
+	margin-bottom: 20px;
+}
+.setField.regSort table td {
+	padding : 5px 0;
+}
+.setField.regSort table th {
+	padding: 0 5px 0 20px;
+}
+
+
+
+
+
+.btnGroup.bottomSort {
+    font-size: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.tarea.singleLong1 {
+    display: block;
+    resize: none;
+    width: 670px;
+    height: 200px;
+    padding: 12px;
+    font-family: "Noto Sans KR",sans-serif;
+    border: 1px solid #e9ecef;
+    background-color: #ffffff;
+}
+.btnGroup.bottomSort .btn {
+    width: auto;
+	height : auto;
+	line-height : 1;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 20px;
+	padding : 12px 50px;
+}
+.btnGroup.bottomSort .btn:first-child {
+    margin-left: 0;
+}
+.btn.pageCancelMod {
+    background-color: #f8f8f9;
+	border: 1px solid #e1e1e1;
+}
+.btn.pageConfirmMod {
+    background-color: #eb6108;
+	color : #fff;
+	border: 1px solid #e1e1e1;
+}
+/* :: inC : 신규 내용 파트. */
+/* :: close : ksg_20210210_1622 : [세무야] 관리자 법령등록 페이지 내용. */
