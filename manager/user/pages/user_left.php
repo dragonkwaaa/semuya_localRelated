@@ -22,12 +22,12 @@
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '04') echo 'activated';?>">
-                <a href="/manager/user" class="tabBtn">
+                <a href="/manager/user/userPay" class="tabBtn">
 					<span>결제내역</span>
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '05') echo 'activated';?>">
-                <a href="/manager/user" class="tabBtn">
+                <a href="/manager/user/userConsulting" class="tabBtn">
 					<span>채팅상담 내역</span>
 				</a>
 			</li>

@@ -182,15 +182,15 @@ input[type="checkbox"]:not(:checked) + label {
 
 input[type="radio"]:checked + label {
 	display : block;
-	width : 16px;
-	height : 16px;
-	background : url("/manager/common/img/radio_full_pink.png") no-repeat center / 100%;
+	width : 20px;
+	height : 20px;
+	background : url("/manager/common/img/radio_full.png") no-repeat center / 100%;
 }
 input[type="radio"]:not(:checked) + label {
 	display : block;
-	width : 16px;
-	height : 16px;
-	background : url("/manager/common/img/radio_empty_pink.png") no-repeat center / 100%;
+	width : 20px;
+	height : 20px;
+	background : url("/manager/common/img/radio_empty.png") no-repeat center / 100%;
 }
 .radioIconBox {
     display: inline-block;
@@ -200,10 +200,8 @@ input[type="radio"]:not(:checked) + label {
 .radioCase .radioTitle {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
-	font-size: 14px;
-	font-weight : 600;
-	font-family : "Noto Sans KR",sans-serif;
+    margin-left: 8px;
+	font-size: 12px;
 }
 .checkBoxCase .checkBoxTitle {
 	display: inline-block;
