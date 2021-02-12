@@ -12,17 +12,17 @@
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '02') echo 'activated';?>">
-                <a href="/manager/taxManage" class="tabBtn">
+                <a href="/manager/taxManage/taxManageReg" class="tabBtn">
 					<span>모의측정설문 등록</span>
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '03') echo 'activated';?>">
-                <a href="/manager/taxManage" class="tabBtn">
+                <a href="/manager/taxManage/manageGoods" class="tabBtn">
 					<span>세무상품 목록</span>
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '04') echo 'activated';?>">
-                <a href="/manager/taxManage" class="tabBtn">
+                <a href="/manager/taxManage/manageGoodsReg" class="tabBtn">
 					<span>세무상품 등록</span>
 				</a>
 			</li>

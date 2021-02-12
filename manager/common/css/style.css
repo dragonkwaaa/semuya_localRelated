@@ -481,6 +481,9 @@ input.tbox.datepickMod:read-only {
 	border-radius : 4px;
 	background-color : #2e2f37;
 }
+.regTblBtn_inputRSort.leftLooseSort {
+	margin-left : 20px;
+}
 .sbox.normMod1 {
     width: 165px;
     margin-left: 8px;
@@ -491,6 +494,9 @@ input.tbox.datepickMod:read-only {
 .measureGaugeTxt {
 	font-size : 12px;
 	margin-left : 8px;
+}
+.measureGaugeTxt.leftTightSort {
+	margin-left : 0;
 }
 .btn_inListDl {
 	display : inline-block;
@@ -533,10 +539,6 @@ input.tbox.datepickMod:read-only {
 .voidSpace_invis {
 	visibility : hidden;
 }
-
-
-
-
 .imgUploadBox.textOnlySort {
     display: block;
     position: relative;
