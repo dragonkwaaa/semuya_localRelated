@@ -10,7 +10,7 @@
 		<a href="/manager/solution" class="btn <?php if($lCode == '05') echo 'activated';?>">솔루션관리</a>
 		<a href="/manager/law" class="btn <?php if($lCode == '06') echo 'activated';?>">법령정보관리</a>
 		<a href="/manager/board/notice" class="btn <?php if($lCode == '07') echo 'activated';?>">고객지원관리</a>
-		<a href="javascript:void(0);" class="btn <?php if($lCode == '08') echo 'activated';?>">설정관리</a>
+		<a href="/manager/setting" class="btn <?php if($lCode == '08') echo 'activated';?>">설정관리</a>
 	</div>  
 	<div class=" btnGroup headerRightSort">
 		<a href="/manager/intro/login" class="btn logoutSort">로그아웃</a>

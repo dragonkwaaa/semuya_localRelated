@@ -12,22 +12,22 @@
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '02') echo 'activated';?>">
-                <a href="/manager/board" class="tabBtn">
+                <a href="/manager/board/faq" class="tabBtn">
 					<span>자주묻는질문</span>
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '03') echo 'activated';?>">
-                <a href="/manager/board" class="tabBtn">
+                <a href="/manager/board/faqReg" class="tabBtn">
 					<span>자주묻는질문 등록</span>
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '04') echo 'activated';?>">
-                <a href="/manager/board" class="tabBtn">
+                <a href="/manager/board/inquiry" class="tabBtn">
 					<span>1:1문의</span>
 				</a>
 			</li>
             <li class="subTabSort fstChd <?php if($rCode == '05') echo 'activated';?>">
-                <a href="/manager/board" class="tabBtn">
+                <a href="/manager/board/news" class="tabBtn">
 					<span>뉴스기사</span>
 				</a>
 			</li>

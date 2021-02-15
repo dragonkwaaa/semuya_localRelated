@@ -1,6 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/head.php';
 $lCode					=	'07';
-$rCode 					=	'01';
+$rCode 					=	'04';
 ?>
 <body>
 <div class="container">
@@ -12,10 +12,7 @@ $rCode 					=	'01';
 				<div class="sectionHeadline">
 					<div class="titleBox headLineSort">
 						<div class="titleText mainMod">고객지원관리</div>
-						<div class="titleText subMod">공지사항</div>
-					</div>
-					<div class="btnGroup headLineSort rightSideMod">
-						<a href="/manager/board/noticeReg" class="btn">공지등록</a>
+						<div class="titleText subMod">1:1문의</div>
 					</div>
 				</div>
 				<div class="sectionCon">
@@ -87,8 +84,8 @@ $rCode 					=	'01';
 									<col style="width:100px;">
 									<col style="width:100px;">
 									<col style="width:100px;">
-									<col style="width:100px;">
-									<col style="width:100px;">
+                                    <col style="width:100px;">
+                                    <col style="width:100px;">
 								</colgroup>
 								<thead>
 								<tr>
@@ -100,9 +97,9 @@ $rCode 					=	'01';
 									</th>
 									<th>제목</th>
 									<th>구분</th>
-									<th>작성자</th>
-									<th>사용유무</th>
-                                    <th>조회수</th>
+                                    <th>고객명</th>
+									<th>고객연락처</th>
+                                    <th>답변여부</th>
                                     <th>등록일</th>
                                     <th>관리</th>
 								</tr>
@@ -115,32 +112,15 @@ $rCode 					=	'01';
 											<label></label>
 										</div>
                                     </td>
-                                    <td>공지사항 상세정보 안내</td>
-                                    <td>전체 공지</td>
-                                    <td>곽반장</td>
-                                    <td>
-                                        <div class="radioGroup inList_vert1">
-								    		<div class="radioCase">
-								    			<div class="radioIconBox">
-								    				<input type="radio" name="sellStatus" value="0" checked="">
-								    				<label></label>
-								    			</div>
-								    			<div class="radioTitle">사용</div>
-								    		</div>
-								    		<div class="radioCase">
-								    			<div class="radioIconBox">
-								    				<input type="radio" name="sellStatus" value="1">
-								    				<label></label>
-								    			</div> 
-								    			<div class="radioTitle">미사용</div>
-								    		</div>
-								    	</div>
-								    </td>
-                                    <td>123</td>
+                                    <td>세무상담 과정을 알고 싶어요</td>
+                                    <td>세무상담</td>
+                                    <td>곽반장 (kwAd)</td>
+                                    <td>010-1234-5678</td>
+                                    <td>답변완료</td>
                                     <td>2021-01-12 14:15:00</td>
                                     <td>
 										<div class="btnGroup listControlSort">
-											<a href="/manager/board/noticeReg" class="btn small darkGreyMod">상세</a>
+											<a href="/manager/board/inquiryReg" class="btn small darkGreyMod">상세</a>
                                             <a href="javascript:void(0);" class="btn small pinkMod">삭제</a>
 										</div>
 									</td>

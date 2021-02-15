@@ -249,27 +249,48 @@ header .logoCase i {
 	width : calc(35% - 14px);
 	max-width : 163px;
 	margin-right : 8px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 .tbox.twinShort2 {
 	width : 165px;
 	margin-right : 8px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 .tbox.twinLong1 {
 	width : 65%;
 	max-width : 470px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 .tbox.twinLong2 {
 	width : 500px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 
 .tbox.singleNorm1 {
 	width : 270px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 .tbox.singleNorm2 {
 	width : 330px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 .tbox.singleLong1 {
 	width : 670px;
+	/* :: open : ksg_20210215_1809 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
 
 .searchBtn_fullHSort {
@@ -480,6 +501,9 @@ input.tbox.datepickMod:read-only {
 	font-size : 13px;
 	border-radius : 4px;
 	background-color : #2e2f37;
+	/* :: open : ksg_20210215_1808 : 추가 내용. */
+	vertical-align : middle;
+	/* :: close : ksg_20210215_1808 : 추가 내용. */
 }
 .regTblBtn_inputRSort.leftLooseSort {
 	margin-left : 20px;
@@ -590,3 +614,61 @@ input.tbox.datepickMod:read-only {
 	font-size : 13px;
 }
 /* :: close : ksg_20210212_1321 : [세무야] 전문가관리_전문가등록 페이지 내용. */
+
+/* :: open : ksg_20210215_1557 : [세무야] 고객지원관리_뉴스기사 페이지 내용. */
+.imgCase_inList {
+	position : relative;
+	display : block;
+	margin : 0 auto;
+	width : 70px;
+	height : 70px;
+}
+.imgCase_inList:after {
+	content : "";
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	background : url("/manager/common/img/emptyImg.png") no-repeat center / cover;
+	z-index : 1;
+}
+.imgCase_inList img {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	z-index : 2;
+	background-color : #fff;
+}
+/* :: close : ksg_20210215_1557 : [세무야] 고객지원관리_뉴스기사 페이지 내용. */
+
+/* :: open : ksg_20210215_1741 : [세무야] 설정관리_사이트설정 페이지 내용. */
+.setGroup_word {
+	display : inline-block;
+	border : 1px solid #e9ecef;
+	width : 668px;
+	min-height : 27px;
+	line-height : 1;
+	vertical-align : middle;
+	font-size : 0;
+	padding : 5.5px 11px 5.5px 11px;
+}
+.setGroup_word .setWord {
+	display : inline-block;
+	padding : 5px 20px 5px 0;
+}
+.setGroup_word .setWord span {
+	font-size : 12px;
+	vertical-align : middle;
+}
+.setGroup_word .setWord .delBtn_setSort {
+	display : inline-block;
+	margin : 0 0 0 8px;
+	width : 15px;
+	height : 15px;
+	background : url("/manager/common/img/close_setGroup.png") no-repeat center / cover;
+	vertical-align : middle;
+}
+/* :: close : ksg_20210215_1741 : [세무야] 설정관리_사이트설정 페이지 내용. */
