@@ -8,14 +8,9 @@
             </li>
             <li class="subTabSort fstChd activated">
                 <a href="javascript:void(0);" class="tabBtn">
-					<span>대시보드1</span>
+					<span>대시보드</span>
 				</a>
-			</li>
-            <li class="subTabSort">
-                <a href="javascript:void(0);" class="tabBtn">
-					<span>대시보드2</span>
-				</a>
-			</li>
+			</li>]
 		</ul>
 	</div>
 </nav>

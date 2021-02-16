@@ -245,6 +245,13 @@ header .logoCase i {
 	padding : 5px 7px;
 	font-size : 12px;
 }
+/* :: inO : ksg_20210216_1442 : 추가 내용. */
+.tbox.singleShort1 {
+	width : 80px;
+	vertical-align : middle;
+	text-align : center;
+}
+/* :: inC : ksg_20210216_1442 : 추가 내용. */
 .tbox.twinShort1 {
 	width : calc(35% - 14px);
 	max-width : 163px;
@@ -273,6 +280,15 @@ header .logoCase i {
 	vertical-align : middle;
 	/* :: close : ksg_20210215_1809 : 추가 내용. */
 }
+.tbox.twinLong3 {
+	width : 400px;
+	vertical-align : middle;
+}
+
+
+
+
+
 
 .tbox.singleNorm1 {
 	width : 270px;
@@ -339,6 +355,22 @@ header .logoCase i {
 .sbox.shortMod:first-child {
     margin-left: 0;
 }
+.sbox.shortMod2 {
+	width : 120px;
+    margin-left: 8px;
+}
+.sbox.shortMod2:first-child {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
 .headLine.listUpperSort .ctrlBtn_rSort {
 	display: inline-block;
     width: 85px;
@@ -672,3 +704,195 @@ input.tbox.datepickMod:read-only {
 	vertical-align : middle;
 }
 /* :: close : ksg_20210215_1741 : [세무야] 설정관리_사이트설정 페이지 내용. */
+
+
+/* :: open : ksg_20210215_2224 : [세무야] 대시보드 페이지 내용. */
+.countRowComplex_status {
+	position : relative;
+}
+.countGroup_status {
+	display : inline-block;
+	width : calc(33.33% - 30px);
+	border : 1px solid #e9ecef;
+	padding : 10px;
+}
+.countGroup_status.leftSort {
+	position : relative;
+}
+.countGroup_status.rightSort {
+	position : absolute;
+	right : 10px;
+}
+.countGroup_status.centerSort {
+	position : absolute;
+	left : calc(50% - 3px);
+	transform : translateX(-50%);
+	-webkit-transform : translateX(-50%);
+}
+.setField.currGroupSort {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.countGroup_status .groupTitle_main {
+	display : block;
+	font-size : 14px;
+	font-weight : 800;
+	margin-bottom : 15px;
+}
+.countGroup_status .groupInfo_status {
+	display : block;
+	width : 100%;
+}
+.countGroup_status .groupImgBox_main {
+	display : inline-block;
+	width : 150px;
+	height : 150px;
+	background-color : #e9ecef;
+	vertical-align : top;
+	float : left;
+}
+.countGroup_status .groupImgBox_main img {
+	width : 100%;
+	height : 100%;
+}
+.countGroup_status .groupCountBox {
+	display : inline-block;
+	width : calc(100% - 220px);
+	vertical-align : top;
+	float : right;
+}
+.countGroup_status .rowLayer {
+	border-bottom : 1px solid #e9ecef;
+	padding-bottom : 10px;
+	padding-top : 10px;
+}
+/* .countGroup_status .rowLayer.lstChd {
+	border-bottom : none;
+	padding-bottom : 0;
+	padding-top : 10px;
+} */
+.linkBtn_more {
+	position : absolute;
+	top : 10px;
+	right : 15px;
+	font-size : 12px;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+.linkBtn_more.sectionHeadSort {
+	top : 2px;
+}
+.rowTitle_left {
+	display : inline-block;
+	font-size : 12px;
+	font-weight : 600;
+	min-width : 150px;
+}
+.rowCounter_right {
+	font-weight : 800;
+	font-size : 12px;
+	color : blue;
+	padding-left : 20px;
+}
+.inTblGear_clickable {
+	cursor : pointer;
+}
+.emptyTxt_horLine {
+	font-size : 20px;
+	font-weight : 800;
+}
+/* :: close : ksg_20210215_2224 : [세무야] 대시보드 페이지 내용. */
+
+/* :: open : ksg_20210216_1453 : [세무야] 회원관리_회원목록 페이지 내용. */
+.popup {
+    display: none;
+    position: fixed;
+	z-index: 101;
+	border : 1px solid #e9ecef;
+	background-color : #f9f9f9;
+	border-radius : 3px;
+}
+.popup.centerSort {
+    position: fixed;
+    top: 51%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+.popup .popupCon {
+    position : relative;
+    min-width : 400px;
+    padding : 20px 0;
+}
+.popup.deliveryInfoPop .popupCon {
+	width : 222px;
+	min-width : auto;
+}	
+
+.popup .btn.flatLong {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.popup.centerSort .closeIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+}
+.titleBox.popupSort {
+	display: block;
+	position : relative;
+    font-size: 14px;
+	font-weight : 800;
+	padding-top : 20px;
+	padding-left : 20px;
+}
+.popup .btnGroup.verticalBottomSort .btn.searchSort {
+	display : inline-block;
+}
+.btn.closeBtn {
+	position : absolute;
+	top : 20px;
+	right : 20px;
+	width : 11px;
+	height : 11px;
+	background : url('/manager/common/img/icon_close.png') no-repeat center / cover;
+}
+.btnGroup.underPopSort {
+	text-align : center;
+	margin-top : 20px;
+}
+.popup.memoPop .popupCon {
+	min-width : 300px;
+}
+.popup .sectionCon.scrollSort {
+	max-height : 600px;
+	height : calc(100% - 20px);
+	overflow-y : scroll;
+	padding : 0 10px;
+}
+.popup .section.regSort {
+	padding : 0;
+}
+.popup .sectionHeadline {
+	padding : 0 20px;
+}
+.btn.underPop_smoke {
+	width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+	background-color: #2e2f37;
+    color: #fff;
+}
+.btn.underPop_orange {
+	width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+	background-color: #eb6108;
+    color: #fff;
+}
+/* :: close : ksg_20210216_1453 : [세무야] 회원관리_회원목록 페이지 내용. */

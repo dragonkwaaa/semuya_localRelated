@@ -24,6 +24,18 @@ $rCode 					=	'02';
 							</colgroup>
 							<tbody>
 							<tr>
+								<th>분류</th>  
+								<td>
+									<div class="sbox normMod1">
+								    	<select>
+								    		<option>일반회원</option>
+								    		<option>개인사업자</option>
+											<option>법인사업자</option>
+								    	</select>
+								    </div>
+								</td>
+                            </tr>
+							<tr>
 								<th>아이디</th>  
 								<td>
 									<input class="tbox singleNorm2" value="" placeholder="아이디를 입력해주세요.">
@@ -43,21 +55,33 @@ $rCode 					=	'02';
 								</td>
                             </tr>
                             <tr>
+                                <th>이름</th>  
+								<td>
+									<input class="tbox singleNorm2" value="" placeholder="연락처를 입력해주세요."> 
+								</td>
+                            </tr>
+							<tr>
                                 <th>연락처</th>  
 								<td>
 									<input class="tbox singleNorm2" value="" placeholder="연락처를 입력해주세요."> 
 								</td>
                             </tr>
-                            <tr>
+							<tr>
                                 <th>회사명</th>  
 								<td>
 									<input class="tbox singleNorm2" value="" placeholder="회사명을 입력해주세요."> 
 								</td>
                             </tr>
-                            <tr>
+							<tr>
                                 <th>사업자번호</th>  
 								<td>
 									<input class="tbox singleNorm2" value="" placeholder="사업자번호를 입력해주세요."> 
+								</td>
+                            </tr>
+                            <tr>
+                                <th>회사 전화번호</th>  
+								<td>
+									<input class="tbox singleNorm2" value="" placeholder="회사 전화번호를 입력해주세요."> 
 								</td>
                             </tr>
                             <tr>
@@ -97,7 +121,7 @@ $rCode 					=	'02';
 								</td>
                             </tr>
                             <tr>
-								<th>아이디</th>  
+								<th>주소</th>  
 								<td>
                                     <input class="tbox twinShort2" value="" placeholder="우편번호">
 									<input class="tbox twinLong2" value="" placeholder="주소">
@@ -111,24 +135,21 @@ $rCode 					=	'02';
 								</td>
                             </tr>
                             <tr>
-                                <th>직전3개년매출액</th>  
+                                <th>챗봇문의 수</th>  
 								<td>
-									<input class="tbox singleNorm2" value="" placeholder="매출액을 숫자로만 입력해주세요.">
-                                    <span class="measureGaugeTxt">원</span>
+									<input class="tbox singleShort1" value="0" placeholder="" readonly>
 								</td>
                             </tr>
                             <tr>
-                                <th>직전3개년소득금액</th>  
+                                <th>전문가 요청 수</th>  
 								<td>
-									<input class="tbox singleNorm2" value="" placeholder="소득액을 숫자로만 입력해주세요.">
-                                    <span class="measureGaugeTxt">원</span>
+									<input class="tbox singleShort1" value="8" placeholder="" readonly>
 								</td>
                             </tr>
                             <tr>
-                                <th>세무조사경험</th>  
+                                <th>위험도 측정 수</th>  
 								<td>
-									<input class="tbox singleNorm2" value="" placeholder="세무조사 횟수를 숫자로만 입력해주세요.">
-                                    <span class="measureGaugeTxt">원</span>
+									<input class="tbox singleShort1" value="18" placeholder="" readonly>
 								</td>
                             </tr>
 						</table>

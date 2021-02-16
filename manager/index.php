@@ -11,138 +11,190 @@ $rCode 					=	'01';
 			<div class="section">
 				<div class="sectionHeadline">
 					<div class="titleBox headLineSort">
-						<div class="titleText mainMod">대시보드</div>
-						<div class="titleText subMod">대시보드1</div>
+						<div class="titleText mainMod">현황정보</div>
 					</div>
-
-
-					<div class="btnGroup headLineSort rightSideMod">
-						<a href="/manager/board/noticeReg" class="btn">공지사항 등록</a>
-					</div>
-
-
-
-
-
 				</div>
 				<div class="sectionCon">
-					<div class="setField searchSort">
-                        <div class="headLine listUpperSort pageTabMod">
-							<div class="tabGroup">
-								<a href="/manager/dash/dashboard_order" class="btn">주문현황</a>
-								<a href="javascript:void(0);" class="btn activated">매입현황</a>
+					<!-- :: open : ksg_20210215_2227 : [세무야] 현황정보 박스 그룹 외곽. -->
+					<div class="setField currGroupSort">
+						<!-- :: open : ksg_20210215_2310 : [세무야] 현황정보 개별 row 박스 파트. -->
+						<div class="countRowComplex_status">
+							<!-- :: open : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<div class="countGroup_status leftSort">
+								<div class="groupTitle_main">AI챗봇</div>
+								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
+								<div class="groupInfo_status">
+									<div class="groupImgBox_main">
+										<img src="">
+									</div>
+									<div class="groupCountBox">
+										<div class="rowLayer">
+											<span class="rowTitle_left">채팅창 유입 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer lstChd">
+											<span class="rowTitle_left">이용자 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<!-- :: open : ksg_20210216_1155 : [세무야] 마지막 라인. 밑줄 및 하단 패딩 없이 사용할 때 이용할 내용. -->
+										<!-- <div class="rowLayer lstChd">
+											<span class="rowTitle_left">이용자 수</span>
+											<span class="rowCounter_right">427</span>
+										</div> -->
+										<!-- :: close : ksg_20210216_1155 : [세무야] 마지막 라인. 밑줄 및 하단 패딩 없이 사용할 때 이용할 내용. -->
+									</div>
+								</div>
 							</div>
+							<!-- :: close : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<!-- :: open : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<div class="countGroup_status centerSort">
+								<div class="groupTitle_main">법령정보 검색</div>
+								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
+								<div class="groupInfo_status">
+									<div class="groupImgBox_main">
+										<img src="">
+									</div>
+									<div class="groupCountBox">
+										<div class="rowLayer">
+											<span class="rowTitle_left">검색 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- :: close : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<!-- :: open : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<div class="countGroup_status rightSort">
+								<div class="groupTitle_main">전문가 요청</div>
+								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
+								<div class="groupInfo_status">
+									<div class="groupImgBox_main">
+										<img src="">
+									</div>
+									<div class="groupCountBox">
+										<div class="rowLayer">
+											<span class="rowTitle_left">전문가 요청 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer lstChd">
+											<span class="rowTitle_left">상담결제건 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- :: close : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
 						</div>
-						<table class="searchTable">
-							<colgroup>
-								<col width="17%">
-								<col width="*">
-								<col width="17%">
-								<col width="*">
-							</colgroup>
-							<tbody>
-							<tr>
-								<th>모델</th>
-								<td>
-									<input class="tbox full onlyNum" value="">
-								</td>
-								<th>고객명</th>
-								<td>
-									<input class="tbox full" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>주문번호</th>
-								<td>
-									<div class="relative">
-                                        <input class="tbox full" value="">
+						<!-- :: close : ksg_20210215_2310 : [세무야] 현황정보 개별 row 박스 파트. -->
+						<!-- :: open : ksg_20210215_2310 : [세무야] 현황정보 개별 row 박스 파트. -->
+						<div class="countRowComplex_status">
+							<!-- :: open : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<div class="countGroup_status leftSort">
+								<div class="groupTitle_main">위험도 측정 수</div>
+								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
+								<div class="groupInfo_status">
+									<div class="groupImgBox_main">
+										<img src="">
 									</div>
-                                </td>
-                                <th>주문자</th>
-                                <td>
-                                    <div class="relative">
-                                        <input class="tbox full nearBtnFullMod" value="">
-										<a href="javascript:void(0);" class="btn rightSideSort">검색</a>
+									<div class="groupCountBox">
+										<div class="rowLayer">
+											<span class="rowTitle_left">무료진단 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer">
+											<span class="rowTitle_left">유료진단 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer">
+											<span class="rowTitle_left">상세유료진단 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
 									</div>
-                                </td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="listField goodsSort">
-						<div class="headLine listUpperSort">
-							<div class="leftPart">                                
-                                <a href="javascript:void(0);" class="btn">선택해제</a>
-                                <a href="javascript:void(0);" class="btn">선택삭제</a>
+								</div>
 							</div>
+							<!-- :: close : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<!-- :: open : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<div class="countGroup_status centerSort">
+								<div class="groupTitle_main">결제건 수</div>
+								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
+								<div class="groupInfo_status">
+									<div class="groupImgBox_main">
+										<img src="">
+									</div>
+									<div class="groupCountBox">
+										<div class="rowLayer">
+											<span class="rowTitle_left">결제대기 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer">
+											<span class="rowTitle_left">결제완료 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- :: close : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<!-- :: open : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+							<div class="countGroup_status rightSort">
+								<div class="groupTitle_main">회원 로그인 수</div>
+								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
+								<div class="groupInfo_status">
+									<div class="groupImgBox_main">
+										<img src="">
+									</div>
+									<div class="groupCountBox">
+										<div class="rowLayer">
+											<span class="rowTitle_left">총 회원 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer">
+											<span class="rowTitle_left">오늘 가입자 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+										<div class="rowLayer">
+											<span class="rowTitle_left">방문회원 수</span>
+											<span class="rowCounter_right">427</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- :: close : ksg_20210215_2218 : [세무야] 현황정보 개별 박스 파트. -->
+						</div>
+						<!-- :: close : ksg_20210215_2310 : [세무야] 현황정보 개별 row 박스 파트. -->
+					</div>
+					<!-- :: close : ksg_20210215_2227 : [세무야] 현황정보 박스 그룹 외곽. -->
+					<div class="listField goodsSort">
+						<div class="sectionHeadline">
+							<div class="titleBox headLineSort">
+								<div class="titleText mainMod">공지사항</div>
+							</div>
+							<a href="javascript:void(0);" class="linkBtn_more sectionHeadSort">+더 보기</a>
 						</div>
 						<div class="tableBox goodsTableSort">
 							<table class="listTable">
 								<colgroup>
-									<col style="width:80px;">
-									<col style="width:150px;">
-									<col style="width:100px;">
+									<col style="width:300px;">
 									<col style="width:100px;">
 									<col style="width:100px;">
 									<col style="width:100px;">
 								</colgroup>
 								<thead>
 								<tr>
-									<th>
-										<div class="checkBoxCase">
-											<input type="checkbox" name="" value="">
-											<label></label>
-										</div>
-									</th>
-									<th>일일 기준 주문번호</th>
-									<th>주문자</th>
-									<th>주문합계</th>
-									<th>결제방법</th>
-                                    <th>주문상태</th>
+									<th>제목</th>
+									<th>작성자</th>
+									<th>조회수</th>
+									<th>등록일</th>
 								</tr>
 								</thead>
 								<tbody>
-								<tr>
-									<td>
-										<div class="checkBoxCase">
-											<input type="checkbox" name="" value="">
-											<label></label>
-										</div>
-                                    </td>
-                                    <td>0000000</td>
-                                    <td>강주원</td>
-                                    <td>5,000</td>
-                                    <td>신용카드 결제</td>
-									<td>
-										배송완료
-									</td>
-                                </tr>
-                                <tr>
-									<td>
-										<div class="checkBoxCase">
-											<input type="checkbox" name="" value="">
-											<label></label>
-										</div>
-                                    </td>
-                                    <td>0000000</td>
-                                    <td>강주원</td>
-                                    <td>5,000</td>
-                                    <td>신용카드 결제</td>
-									<td>
-										배송완료
-									</td>
+								<tr class="inTblGear_clickable" onClick = "location.href='/manager/board/notice'">
+                                    <td>공지사항1 입니다.</td>
+                                    <td>곽반장</td>
+                                    <td>427</td>
+                                    <td>2021-01-01 11:34:05</td>
                                 </tr>
 								</tbody>
 							</table>
-						</div>
-						<div class="pageGroup">
-							<ul class="pageBox">
-								<li class="prevBtn"><a href="javascript:void(0);">이전</a></li>
-								<li class="pageNum activated"><a href="javascript:void(0);">1</a></li>
-								<li class="pageNum"><a href="javascript:void(0);">2</a></li>
-								<li class="pageNum"><a href="javascript:void(0);">3</a></li>
-								<li class="nextBtn"><a href="javascript:void(0);">다음</a></li>
-							</ul>
 						</div>
 					</div>
 				</div>

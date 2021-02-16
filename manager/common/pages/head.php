@@ -17,6 +17,5 @@
 
 	<script src="/manager/common/js/jquery-3.1.1.min.js"></script>
 	<script src="/manager/common/js/jquery-ui-1.12.1.js"></script>
-	<script src="/manager/common/js/slick.js"></script>
-	<script src="/manager/common/js/common.js"></script>
+	<script src="/manager/common/js/ui.js"></script>
 </head>

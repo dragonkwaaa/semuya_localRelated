@@ -16,11 +16,13 @@
 					<span>전문가 등록</span>
 				</a>
 			</li>
-            <li class="subTabSort <?php if($rCode == '03') echo 'activated';?>">
+	
+            <!-- <li class="subTabSort <?php if($rCode == '03') echo 'activated';?>">
                 <a href="/manager/expert/offDay" class="tabBtn">
 					<span>휴무일 설정</span>
 				</a>
-			</li>
+			</li> -->
+
             <li class="subTabSort <?php if($rCode == '04') echo 'activated';?>">
                 <a href="/manager/expert/expertConsult" class="tabBtn">
 					<span>전문가 세무상담내역</span>
