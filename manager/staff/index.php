@@ -144,7 +144,7 @@ $rCode 					=	'01';
                                     <td>2020-11-14 23:00</td>
                                     <td>
 										<div class="btnGroup listControlSort">
-                                            <a href="javascript:void(0);" class="btn small darkGreyMod">상세</a>
+                                            <a href="javascript:openModiPop();" class="btn small darkGreyMod">상세</a>
                                             <a href="javascript:void(0);" class="btn small pinkMod">삭제</a>
 										</div>
 									</td>
@@ -167,10 +167,6 @@ $rCode 					=	'01';
 		</div>
 	</div>
 </div>
-
-
-
-
 <!-- :: open : ksg_20210217_1648 : [세무야] 직원 등록 팝업. -->
 <div class="popup centerSort regStaffPop">
 	<div class="titleBox popupSort">
@@ -191,6 +187,76 @@ $rCode 					=	'01';
 							<th>직원명</th>  
 							<td>
 								<input class="tbox singleNorm2" value="" placeholder="직원명을 입력해주세요.">
+							</td>
+                        </tr>
+						<tr>
+							<th>담당영역</th>  
+							<td>
+								<div class="relative">
+									<div class="radioGroup searchSort">
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">회원관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">결제관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">전문가관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">직원관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">세무관리</div>
+										</div>
+									</div>
+								</div>
+								<div class="relative mt5">
+									<div class="radioGroup searchSort">
+										
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">솔루션관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">법령정보관리</div>
+										</div> 
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">고객지원관리</div>
+										</div>
+									</div>
+								</div>
 							</td>
                         </tr>
 						<tr>
@@ -229,10 +295,11 @@ $rCode 					=	'01';
                         <tr>
                             <th>상세주소</th>  
 							<td>
-								<input class="tbox singleLong1" value="" placeholder="나머지 주소를 입력해주세요."> 
+								<input class="tbox singleLong2" value="" placeholder="나머지 주소를 입력해주세요."> 
 							</td>
                         </tr>
 					</table>
+				</div>
 			</div>
 		</div>
 		<div class="btnGroup underPopSort">
@@ -242,6 +309,149 @@ $rCode 					=	'01';
 	</div>
 </div>
 <!-- :: close : ksg_20210217_1648 : [세무야] 직원 등록 팝업. -->
+<!-- :: open : ksg_20210217_1816 : [세무야] 직원 상세 팝업. -->
+<div class="popup centerSort modiStaffPop">
+	<div class="titleBox popupSort">
+		<div>직원상세</div>
+		<a href="javascript:closePop()" class="btn closeBtn"></a>
+	</div>
+	<div class="popupCon">
+		<div class="section regSort">
+			<div class="sectionCon scrollSort">
+				<div class="setField regSort">
+					<table class="regTable">
+						<colgroup>
+							<col style="width : 200px;">
+							<col style="width : 600px;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th>직원명</th>  
+							<td>
+								<input class="tbox singleNorm2" value="곽반장" placeholder="직원명을 입력해주세요.">
+							</td>
+                        </tr>
+						<tr>
+							<th>담당영역</th>  
+							<td>
+								<div class="relative">
+									<div class="radioGroup searchSort">
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">회원관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType" checked="">
+												<label></label>
+											</div>
+											<div class="radioTitle">결제관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType" checked="">
+												<label></label>
+											</div>
+											<div class="radioTitle">전문가관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">직원관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType" checked="">
+												<label></label>
+											</div>
+											<div class="radioTitle">세무관리</div>
+										</div>
+									</div>
+								</div>
+								<div class="relative mt5">
+									<div class="radioGroup searchSort">
+										
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">솔루션관리</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">법령정보관리</div>
+										</div> 
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="checkbox" name="expertType">
+												<label></label>
+											</div>
+											<div class="radioTitle">고객지원관리</div>
+										</div>
+									</div>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+							<th>아이디</th>  
+							<td>
+								<input class="tbox singleNorm2" value="dragonKad" placeholder="아이디를 입력해주세요.">
+                                <a href="javascript:void(0);" class="regTblBtn_inputRSort">중복확인</a>
+							</td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>  
+							<td>
+								<input class="tbox singleNorm2" value="1234**" placeholder="비밀번호를 입력해주세요."> 
+							</td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 재입력</th>  
+							<td>
+								<input class="tbox singleNorm2" value="" placeholder="비밀번호를 한번 더 입력해주세요."> 
+							</td>
+                        </tr>
+						<tr>
+                            <th>연락처</th>  
+							<td>
+								<input class="tbox singleNorm2" value="010-1234-1234" placeholder="연락처를 입력해주세요."> 
+							</td>
+                        </tr>
+                        <tr>
+							<th>주소</th>  
+							<td>
+                                <input class="tbox twinShort2" value="" placeholder="우편번호">
+								<input class="tbox twinLong3" value="" placeholder="주소">
+                                <a href="javascript:void(0);" class="regTblBtn_inputRSort">주소검색</a>
+							</td>
+                        </tr>
+                        <tr>
+                            <th>상세주소</th>  
+							<td>
+								<input class="tbox singleLong2" value="" placeholder="나머지 주소를 입력해주세요."> 
+							</td>
+                        </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="btnGroup underPopSort">
+			<a href="javascript:closePop()" class="btn underPop_smoke">취소</a>
+			<a href="javascript:choicePop()" class="btn underPop_orange">저장</a>
+		</div>
+	</div>
+</div>
+<!-- :: close : ksg_20210217_1816 : [세무야] 직원 상세 팝업. -->
+
 
 <script>
 // :: open : ksg_20210217_1650 : [세무야] 등록 팝업창 오픈 스크립트.

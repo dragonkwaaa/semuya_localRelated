@@ -285,11 +285,6 @@ header .logoCase i {
 	vertical-align : middle;
 }
 
-
-
-
-
-
 .tbox.singleNorm1 {
 	width : 270px;
 	/* :: open : ksg_20210215_1809 : 추가 내용. */
@@ -307,6 +302,10 @@ header .logoCase i {
 	/* :: open : ksg_20210215_1809 : 추가 내용. */
 	vertical-align : middle;
 	/* :: close : ksg_20210215_1809 : 추가 내용. */
+}
+.tbox.singleLong2 {
+	width : 495px;
+	vertical-align : middle;
 }
 
 .searchBtn_fullHSort {

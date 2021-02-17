@@ -166,7 +166,7 @@ $rCode 					=	'02';
 							<tr>
                                 <th>전문분야</th>  
 								<td>
-									<div class="relative"> 
+									<div class="relative">
 										<div class="radioGroup searchSort">
 											<div class="radioCase">
 												<div class="radioIconBox">
