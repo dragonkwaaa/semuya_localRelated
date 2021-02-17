@@ -1,63 +1,42 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/head.php';
-$lCode					=	'03';
-$rCode 					=	'04';
+$lCode					=	'02_1';
+$rCode 					=	'01';
 ?>
 <body>
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/header.php'; ?>
 	<div class="wrapper">
-		<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/expert/pages/expert_left.php'; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/pay/pages/pay_left.php'; ?>
 		<div class="contents">
 			<div class="section">
 				<div class="sectionHeadline">
 					<div class="titleBox headLineSort">
-						<div class="titleText mainMod">전문가관리</div>
-						<div class="titleText subMod">전문가 세무상담내역</div>
+						<div class="titleText mainMod">결제관리</div>
+						<div class="titleText subMod">결제내역</div>
 					</div>
 				</div>
 				<div class="sectionCon">
 					<div class="setField searchSort">
 						<table class="searchTable">
 							<colgroup>
-								<col width="10%">
-								<col width="40%">
-								<col width="50%">
+								<col style="width : 100px;">
+								<col style="width : 800px;">
 							</colgroup>
 							<tbody>
 							<tr>
 								<th>검색어</th>
 								<td>
-									<div class="sbox normMod1">
+                                    <div class="sbox normMod1">
 								    	<select>
-								    		<option>전체</option>
+								    		<option>- 전체 -</option>
 								    	</select>
 								    </div>
 									<input class="tbox twinLong1 ml8" value="" placeholder="검색어를 입력해주세요.">
 								</td>
-								<td>
-									<div class="relative"> 
-										<div class="radioGroup searchSort">
-											<div class="radioCase">
-												<div class="radioIconBox">
-													<input type="checkbox" name="payStat">
-													<label></label>
-												</div>
-												<div class="radioTitle">미정산</div>
-											</div>
-											<div class="radioCase">
-												<div class="radioIconBox">
-													<input type="checkbox" name="payStat">
-													<label></label>
-												</div>
-												<div class="radioTitle">정산완료</div>
-											</div>
-										</div>
-									</div>
-								</td>
                             </tr>
                             <tr>
-								<th>등록일</th>
-								<td colspan="2">
+								<th>기간</th>
+								<td>
 									<input id="startDate" class="tbox datepickMod" name="startDate" value="" readonly="">
 									<span class="dateRangeSign">~</span>
 									<input id="endDate" class="tbox datepickMod" name="endDate" value="" readonly="">
@@ -80,7 +59,6 @@ $rCode 					=	'04';
 						<div class="headLine listUpperSort">
 							<div class="leftPart">
                                 <a href="javascript:void(0);" class="ctrlBtn">선택삭제</a>
-								<a href="javascript:void(0);" class="ctrlBtn_lSort">선택항목 정산</a>
 							</div>
                             <!-- :: starting : ksg_20210210_1441 : [세무야] 테이블 우상단 컨트롤박스 파트. -->
                             <div class="rightPart">
@@ -104,13 +82,15 @@ $rCode 					=	'04';
 						<div class="tableBox">
 							<table class="listTable">
 								<colgroup>
-									<col style="width:80px;">
-									<col style="width:100px;">
-									<col style="width:100px;">
-									<col style="width:100px;">
-									<col style="width:100px;">
-									<col style="width:100px;">
+									<col style="width:50px;">
+                                    <col style="width:120px;">
                                     <col style="width:100px;">
+                                    <col style="width:120px;">
+                                    <col style="width:120px;">
+                                    <col style="width:200px;">
+                                    <col style="width:120px;">
+                                    <col style="width:100px;">
+                                    <col style="width:150px;">
                                     <col style="width:100px;">
                                     <col style="width:100px;">
 								</colgroup>
@@ -122,11 +102,14 @@ $rCode 					=	'04';
 											<label></label>
 										</div>
 									</th>
-									<th>전문가명</th>
-									<th>고객 연락처</th>
-                                    <th>고객 업체</th>
-                                    <th>진행상태</th>
-									<th>신청일</th>
+									<th>아이디</th>
+                                    <th>이름</th>
+                                    <th>상호명</th>
+                                    <th>전화번호</th>
+                                    <th>결제수단</th>
+                                    <th>결제금액</th>
+                                    <th>이용 서비스</th>
+                                    <th>결제일</th>
                                     <th>관리</th>
 								</tr>
 								</thead>
@@ -138,55 +121,21 @@ $rCode 					=	'04';
 											<label></label>
 										</div>
                                     </td>
-                                    <td>곽반장(kwaddd)</td>
-                                    <td>010-1234-5678</td>
-                                    <td>에이디치히얌</td>
-                                    <td>미완료</td>
-                                    <td>2021-01-01 11:00:34</td>
+                                    <td>kwadd</td>
+                                    <td>곽반장</td>
+                                    <td>곽회사</td>
+                                    <td>010-1243-1234</td>
                                     <td>
-										<div class="btnGroup listControlSort">
-											<!-- :: open : ksg_20210216_1729 : [세무야] 상세 페이지로 연결되는 버튼. 여기서는 미사용. -->
-											<!-- <a href="/manager/expert/expertConsultSpec" class="btn small darkGreyMod">상세</a> -->
-											<!-- :: close : ksg_20210216_1729 : [세무야] 상세 페이지로 연결되는 버튼. 여기서는 미사용. -->
-											<a href="javascript:void(0);" class="btn small darkGreyMod">상담완료</a>
-                                            <a href="javascript:void(0);" class="btn small pinkMod">삭제</a>
-										</div>
-									</td>
-                                </tr>
-								<tr>
-									<td>
-										<div class="checkBoxCase">
-											<input type="checkbox" name="" value="">
-											<label></label>
-										</div>
+                                        우리카드 / (1234-12-1234)
                                     </td>
-                                    <td>곽반장(kwaddd)</td>
-                                    <td>010-1234-5678</td>
-                                    <td>에이디치히얌</td>
-                                    <td>상담완료</td>
-                                    <td>2021-01-01 11:00:34</td>
+                                    <td>1,432,200 원</td>
+                                    <td>상세유료진단1</td>
+
+
+                                    <td>2020-11-14 23:00</td>
                                     <td>
 										<div class="btnGroup listControlSort">
-											<a href="javascript:void(0);" class="btn small darkGreyMod hide">완료</a>
-                                            <a href="javascript:void(0);" class="btn small pinkMod">삭제</a>
-										</div>
-									</td>
-                                </tr>
-								<tr>
-									<td>
-										<div class="checkBoxCase">
-											<input type="checkbox" name="" value="">
-											<label></label>
-										</div>
-                                    </td>
-                                    <td>곽반장(kwaddd)</td>
-                                    <td>010-1234-5678</td>
-                                    <td>에이디치히얌</td>
-                                    <td>정산완료</td>
-                                    <td>2021-01-01 11:00:34</td>
-                                    <td>
-										<div class="btnGroup listControlSort">
-											<a href="javascript:void(0);" class="btn small darkGreyMod hide">완료</a>
+                                            <a href="javascript:openWPop();" class="btn small darkGreyMod">환불</a>
                                             <a href="javascript:void(0);" class="btn small pinkMod">삭제</a>
 										</div>
 									</td>
@@ -209,5 +158,36 @@ $rCode 					=	'04';
 		</div>
 	</div>
 </div>
+<!-- :: open : ksg_20210216_1628 : [세무야] 환불 안내문구 팝업. -->
+<div class="popup centerSort warnRefundPop">
+	<div class="titleBox popupSort">
+		<div>환불확인</div>
+		<a href="javascript:closePop()" class="btn closeBtn"></a>
+	</div>
+	<div class="popupCon">
+		<div class="section regSort">
+			<div class="sectionCon">
+                <!-- :: open : ksg_20210216_1631 : [세무야] 단순 안내문구 파트. -->
+                <div class="popTxtBox_single1">
+                    정말 환불하시겠습니까?
+                </div>
+                <!-- :: close : ksg_20210216_1631 : [세무야] 단순 안내문구 파트. -->
+			</div>
+		</div>
+		<div class="btnGroup underPopSort">
+			<a href="javascript:closePop()" class="btn underPop_smoke">취소</a>
+			<a href="javascript:choicePop()" class="btn underPop_orange">환불</a>
+		</div>
+	</div>
+</div>
+<!-- :: close : ksg_20210216_1628 : [세무야] 환불 안내문구 팝업. -->
+<script>
+// :: open : ksg_20210216_1455 : [세무야] 환불 안내 팝업창 오픈 스크립트.
+function openWPop(){
+	$('.contents').addClass('overlay');
+	$('.popup.warnRefundPop').show();
+};
+// :: close : ksg_20210216_1455 : [세무야] 환불 안내 팝업창 오픈 스크립트.
+</script>
 </body>
 </html>

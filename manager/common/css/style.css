@@ -346,7 +346,12 @@ header .logoCase i {
     top: 0;
     right: 0;
     text-align: right;
-	width : 100%;
+	/* :: inO : ksg_20210216_1711 : 제거 내용. */
+	/* width : 100%; */
+	/* :: inC : ksg_20210216_1711 : 제거 내용. */
+	/* :: inO : ksg_20210216_1711 : 수정 내용. */
+	width : 500px;
+	/* :: inC : ksg_20210216_1711 : 수정 내용. */
 }
 .sbox.shortMod {
 	width : 100px;
@@ -362,14 +367,6 @@ header .logoCase i {
 .sbox.shortMod2:first-child {
     margin-left: 0;
 }
-
-
-
-
-
-
-
-
 
 .headLine.listUpperSort .ctrlBtn_rSort {
 	display: inline-block;
@@ -896,3 +893,33 @@ input.tbox.datepickMod:read-only {
     color: #fff;
 }
 /* :: close : ksg_20210216_1453 : [세무야] 회원관리_회원목록 페이지 내용. */
+
+/* :: open : ksg_20210216_1632 : [세무야] 결제관리_결제내역 페이지 내용. */
+.popTxtBox_single1 {
+	padding : 20px;
+	text-align : center;
+}
+/* :: close : ksg_20210216_1632 : [세무야] 결제관리_결제내역 페이지 내용. */
+
+/* :: open : ksg_20210216_1709 : [세무야] 전문가관리_전문가세무상담내역 페이지 내용. */
+.ctrlBtn_lSort {
+	display: inline-block;
+    width: 90px;
+    height: 38px;
+    background-color: #2e2f37;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+}
+.btnLayer_inslist {
+	display : block;
+	margin : 3px auto 0 auto;
+	text-align : left;
+	width : 105px;
+}
+.btnLayer_inslist.fstChd {
+	margin-top : 0;
+}
+/* :: close : ksg_20210216_1709 : [세무야] 전문가관리_전문가세무상담내역 페이지 내용. */
