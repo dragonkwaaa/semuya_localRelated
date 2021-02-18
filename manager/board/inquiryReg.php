@@ -54,7 +54,7 @@ $rCode 					=	'04';
                             <tr>
                                 <th class="vertTopSort">질문내용</th>  
 								<td>
-                                    <textarea class="tarea singleLong1" placeholder="질문내용을 입력해주세요."></textarea>
+                                    <textarea class="tarea singleLong1" placeholder="질문내용을 입력해주세요." readonly="">세무상담 과정이 어떻게 되는지 알려주시면 감사하겠습니다.</textarea>
 								</td>
                             </tr>
                             <tr>
