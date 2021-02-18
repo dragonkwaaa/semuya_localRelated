@@ -25,7 +25,7 @@ $rCode 					=	'01';
 								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
 								<div class="groupInfo_status">
 									<div class="groupImgBox_main">
-										<img src="">
+										<img src="/manager/common/img/dashImg1.png">
 									</div>
 									<div class="groupCountBox">
 										<div class="rowLayer">
@@ -52,7 +52,7 @@ $rCode 					=	'01';
 								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
 								<div class="groupInfo_status">
 									<div class="groupImgBox_main">
-										<img src="">
+										<img src="/manager/common/img/dashImg2.png">
 									</div>
 									<div class="groupCountBox">
 										<div class="rowLayer">
@@ -69,7 +69,7 @@ $rCode 					=	'01';
 								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
 								<div class="groupInfo_status">
 									<div class="groupImgBox_main">
-										<img src="">
+										<img src="/manager/common/img/dashImg3.png">
 									</div>
 									<div class="groupCountBox">
 										<div class="rowLayer">
@@ -94,7 +94,7 @@ $rCode 					=	'01';
 								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
 								<div class="groupInfo_status">
 									<div class="groupImgBox_main">
-										<img src="">
+										<img src="/manager/common/img/dashImg4.png">
 									</div>
 									<div class="groupCountBox">
 										<div class="rowLayer">
@@ -119,7 +119,7 @@ $rCode 					=	'01';
 								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
 								<div class="groupInfo_status">
 									<div class="groupImgBox_main">
-										<img src="">
+										<img src="/manager/common/img/dashImg5.png">
 									</div>
 									<div class="groupCountBox">
 										<div class="rowLayer">
@@ -140,7 +140,7 @@ $rCode 					=	'01';
 								<a href="javascript:void(0);" class="linkBtn_more">+더 보기</a>
 								<div class="groupInfo_status">
 									<div class="groupImgBox_main">
-										<img src="">
+										<img src="/manager/common/img/dashImg6.png">
 									</div>
 									<div class="groupCountBox">
 										<div class="rowLayer">

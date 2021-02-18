@@ -706,11 +706,21 @@ input.tbox.datepickMod:read-only {
 .countRowComplex_status {
 	position : relative;
 }
+/* :: inO : ksg_20210218_1454 : 추가 내용. */
+.countRowComplex_status + .countRowComplex_status {
+	margin-top : 20px;
+}
+/* :: inC : ksg_20210218_1454 : 추가 내용. */
 .countGroup_status {
 	display : inline-block;
 	width : calc(33.33% - 30px);
-	border : 1px solid #e9ecef;
 	padding : 10px;
+	/* :: inO : ksg_20210218_1453 : 삭제 내용. */
+	/* border : 1px solid #e9ecef; */
+	/* :: inC : ksg_20210218_1453 : 삭제 내용. */
+	/* :: inO : ksg_20210218_1453 : 추가 내용. */
+	background-color : #fff;
+	/* :: inC : ksg_20210218_1453 : 추가 내용. */
 }
 .countGroup_status.leftSort {
 	position : relative;
@@ -728,6 +738,9 @@ input.tbox.datepickMod:read-only {
 .setField.currGroupSort {
     padding: 5px 10px;
     border-radius: 4px;
+	/* :: inO : ksg_20210218_1452 : 추가 내용. */
+	background-color : transparent;
+	/* :: inC : ksg_20210218_1452 : 추가 내용. */
 }
 .countGroup_status .groupTitle_main {
 	display : block;
@@ -741,11 +754,18 @@ input.tbox.datepickMod:read-only {
 }
 .countGroup_status .groupImgBox_main {
 	display : inline-block;
-	width : 150px;
-	height : 150px;
+	/* :: inO : ksg_20210218_1435 : 기존내용 삭제. */
+	/* width : 150px;
+	height : 150px; 
+	float : left;	*/
+	/* :: inC : ksg_20210218_1435 : 기존내용 삭제. */	
+	/* :: inO : ksg_20210218_1435 : 추가 내용. */
+	width : 80px;
+	height : 80px;
+	/* :: inC : ksg_20210218_1435 : 추가 내용. */
 	background-color : #e9ecef;
 	vertical-align : top;
-	float : left;
+	
 }
 .countGroup_status .groupImgBox_main img {
 	width : 100%;
@@ -753,15 +773,32 @@ input.tbox.datepickMod:read-only {
 }
 .countGroup_status .groupCountBox {
 	display : inline-block;
-	width : calc(100% - 220px);
 	vertical-align : top;
-	float : right;
+	/* :: inO ksg_20210218_1438 : 삭제 내용. */
+	/* float : right;
+	width : calc(100% - 220px); */
+	/* :: inC ksg_20210218_1438 : 삭제 내용. */
+	/* :: inO ksg_20210218_1438 : 추가 내용. */
+	margin-left : 60px;
+	width : calc(100% - 150px);
+	/* :: inC ksg_20210218_1438 : 추가 내용. */
 }
 .countGroup_status .rowLayer {
-	border-bottom : 1px solid #e9ecef;
+	/* :: inO : ksg_20210218_1442 : 삭제 내용. */
+	/* border-bottom : 1px solid #e9ecef;
 	padding-bottom : 10px;
-	padding-top : 10px;
+	padding-top : 10px; */
+	/* :: inC : ksg_20210218_1442 : 삭제 내용. */
+	/* :: inO : ksg_20210218_1442 : 추가 내용. */
+	padding-top : 14px;
+	/* :: inC : ksg_20210218_1442 : 추가 내용. */
 }
+/* :: inO : ksg_20210218_1451 : 추가 내용. */
+.countGroup_status .rowLayer:first-child {
+	padding-top : 0;
+}
+/* :: inC : ksg_20210218_1451 : 추가 내용. */
+
 /* .countGroup_status .rowLayer.lstChd {
 	border-bottom : none;
 	padding-bottom : 0;
@@ -782,13 +819,24 @@ input.tbox.datepickMod:read-only {
 	display : inline-block;
 	font-size : 12px;
 	font-weight : 600;
-	min-width : 150px;
+	/* :: inO : ksg_20210218_1444 : 삭제 내용. */
+	/* min-width : 150px; */
+	/* :: inC : ksg_20210218_1444 : 삭제 내용. */
+	/* :: inO : ksg_20210218_1444 : 추가 내용. */
+	min-width : 80px;
+	/* :: inC : ksg_20210218_1444 : 추가 내용. */
 }
 .rowCounter_right {
 	font-weight : 800;
 	font-size : 12px;
-	color : blue;
 	padding-left : 20px;
+	/* :: inO : ksg_20210218_1445 : 삭제 내용. */
+	/* color : blue; */
+	/* :: inC : ksg_20210218_1445 : 삭제 내용. */
+	/* :: inO : ksg_20210218_1445 : 추가 내용. */
+	color : #d55b0d;
+	/* :: inC : ksg_20210218_1445 : 추가 내용. */
+
 }
 .inTblGear_clickable {
 	cursor : pointer;
