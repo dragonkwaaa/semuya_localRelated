@@ -1052,3 +1052,17 @@ input.tbox.datepickMod:read-only {
 	color : #fff;
 }
 /* ::  close : ksg_20210218_1957 : [세무야] 로그인 페이지 내용. */
+
+/* :: open : ksg_20210221_2149 : [세무야] 전문가 경력 관리 페이지 내용. */
+.btnGroup_orderChange {
+	font-size : 0;
+}
+.btnGroup_orderChange .changeBtn {
+	display : inline-block;
+	margin-left : 2px;
+}
+.btnGroup_orderChange .changeBtn:first-child {
+	display : inline-block;
+	margin-left : 0;
+}
+/* :: close : ksg_20210221_2149 : [세무야] 전문가 경력 관리 페이지 내용. */

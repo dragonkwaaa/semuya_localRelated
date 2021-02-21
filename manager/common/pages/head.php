@@ -6,14 +6,14 @@
 	<title class="title">세무야 관리자 페이지</title>
 	<meta property="og:image" content="">
 
-	<link rel="shortcut icon" type="image/png" href="">
+	<link rel="shortcut icon" type="image/png" href="/manager/common/img/favicon.ico">
 
 	<link rel="stylesheet" type="text/css" href="/manager/common/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/manager/common/css/ui.css">
 	<link rel="stylesheet" type="text/css" href="/manager/common/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/manager/common/css/jquery-ui.min.css">
-	<link rel="stylesheet" type="text/css" href="/manager/common/css/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="/manager/common/css/slick.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/manager/common/css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="/manager/common/css/slick.css"> -->
 
 	<script src="/manager/common/js/jquery-3.1.1.min.js"></script>
 	<script src="/manager/common/js/jquery-ui-1.12.1.js"></script>

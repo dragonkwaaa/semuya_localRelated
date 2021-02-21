@@ -311,6 +311,13 @@ input[type="radio"]:not(:checked) + label {
 	background-color : #ffab2f;
 	color : #fff;
 }
+/* :: inO : ksg_20210221_2204 : 추가 내용. */
+.btn.orangeMod {
+	background-color : #eb6108;
+	color : #fff;
+}
+/* :: inC : ksg_20210221_2204 : 추가 내용. */
+
 .btn.jadeMod {
 	background-color : #1abcbd;
 	color : #fff;
@@ -358,13 +365,13 @@ input[type="radio"]:not(:checked) + label {
     background: url(/manager/common/img/icon_quarantine.png) no-repeat center / cover;
 }
 .increaseIcon {
-	width : 30px;
+	width : 29.5px;
 	height : 30px;
 	vertical-align: middle;
     background: url(/manager/common/img/icon_increase.png) no-repeat center / cover;
 }
 .decreaseIcon {
-	width : 30px;
+	width : 29.5px;
 	height : 30px;
 	vertical-align: middle;
     background: url(/manager/common/img/icon_decrease.png) no-repeat center / cover;
